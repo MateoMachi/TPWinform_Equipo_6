@@ -9,11 +9,11 @@ namespace dominio
     public class Categoria
     {
         public int idCategoria { get; set; }
-        public string categoria { get; set; }
+        public string nomCategoria { get; set; }
 
         public override string ToString()
         {
-            return categoria;
+            return nomCategoria;
         }
 
     }

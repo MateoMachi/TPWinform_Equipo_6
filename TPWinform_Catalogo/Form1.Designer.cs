@@ -45,9 +45,9 @@
             // dataGridViewCelulares
             // 
             this.dataGridViewCelulares.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCelulares.Location = new System.Drawing.Point(12, 49);
+            this.dataGridViewCelulares.Location = new System.Drawing.Point(12, 3);
             this.dataGridViewCelulares.Name = "dataGridViewCelulares";
-            this.dataGridViewCelulares.Size = new System.Drawing.Size(515, 209);
+            this.dataGridViewCelulares.Size = new System.Drawing.Size(495, 223);
             this.dataGridViewCelulares.TabIndex = 0;
             // 
             // buttonAgregar
@@ -111,9 +111,9 @@
             // 
             // pictureBoxFoto
             // 
-            this.pictureBoxFoto.Location = new System.Drawing.Point(553, 49);
+            this.pictureBoxFoto.Location = new System.Drawing.Point(536, 3);
             this.pictureBoxFoto.Name = "pictureBoxFoto";
-            this.pictureBoxFoto.Size = new System.Drawing.Size(220, 209);
+            this.pictureBoxFoto.Size = new System.Drawing.Size(235, 223);
             this.pictureBoxFoto.TabIndex = 7;
             this.pictureBoxFoto.TabStop = false;
             // 

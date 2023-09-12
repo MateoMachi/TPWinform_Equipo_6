@@ -28,15 +28,24 @@ namespace Negocio
                 {
 
                     Articulo art = new Articulo();
+                    
                     art.Id = (int)Dat.Lector["Id"];
                     if (!(Dat.Lector["Codigo"] is DBNull)) { art.codigoArticulo = (string)Dat.Lector["Codigo"]; }
                     if (!(Dat.Lector["Nombre"] is DBNull))  { art.nombre = (string)Dat.Lector["Nombre"];  }
                     if (!(Dat.Lector["Descripcion"] is DBNull )) { art.descripcion = (string)Dat.Lector["Descripcion"]; }
-                    if (!(Dat.Lector["Precio"] is DBNull )) { art.precio = (decimal)Dat.Lector["Precio"]; } 
+                    if (!(Dat.Lector["Precio"] is DBNull )) { art.precio = (decimal)Dat.Lector["Precio"]; }
+                 
                     
+                    art.Categoria = new Categoria();
+                    if (!(Dat.Lector["Categoria"] is DBNull )) { art.Categoria.nomCategoria = (string)Dat.Lector["Categoria"]; }
+                    else
+                        art.Categoria.nomCategoria = "Sin categoria";
+
+                   art.Marca = new Marca();
+                    if (!(Dat.Lector["Marca"] is DBNull )) { art.Marca.nomMarca = (String)Dat.Lector["Marca"];  }
+
                     lista.Add(art);
                     
-                    // if (!(Dat.Lector["Categoria"] is DBNull )) { art.Categoria = (string)Dat.Lector["Categoria"]; }
 
 
                 }
