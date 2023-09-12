@@ -45,7 +45,7 @@
             // dataGridViewCelulares
             // 
             this.dataGridViewCelulares.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCelulares.Location = new System.Drawing.Point(12, 86);
+            this.dataGridViewCelulares.Location = new System.Drawing.Point(12, 49);
             this.dataGridViewCelulares.Name = "dataGridViewCelulares";
             this.dataGridViewCelulares.Size = new System.Drawing.Size(515, 209);
             this.dataGridViewCelulares.TabIndex = 0;
