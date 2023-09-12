@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -22,7 +23,7 @@ namespace Negocio
         public AccesoDatos()
         {
             
-            conexion = new SqlConnection("server=.\\SQLEXPRESS; database=nombreDeBase integrated security=true");
+            conexion = new SqlConnection("server=.\\SQLEXPRESS; database=CATALOGO_P3_DB; integrated security=true");
             comando = new SqlCommand();
         }
 
@@ -42,7 +43,7 @@ namespace Negocio
             }
             catch (Exception ex)
             {
-                throw ex;
+                
             }
         }
 
