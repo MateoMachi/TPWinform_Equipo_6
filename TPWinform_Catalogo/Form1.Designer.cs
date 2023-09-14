@@ -47,8 +47,11 @@
             // dataGridViewArticulos
             // 
             this.dataGridViewArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewArticulos.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dataGridViewArticulos.Location = new System.Drawing.Point(27, 67);
+            this.dataGridViewArticulos.MultiSelect = false;
             this.dataGridViewArticulos.Name = "dataGridViewArticulos";
+            this.dataGridViewArticulos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewArticulos.Size = new System.Drawing.Size(534, 333);
             this.dataGridViewArticulos.TabIndex = 0;
             this.dataGridViewArticulos.SelectionChanged += new System.EventHandler(this.dataGridViewCelulares_SelectionChanged);
