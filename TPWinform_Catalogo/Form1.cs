@@ -74,6 +74,13 @@ namespace TPWinform_Catalogo
 
         }
 
-    
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            
+            FormAgregar ventanaAgregar = new FormAgregar();
+            ventanaAgregar.ShowDialog();
+
+
+        }
     }
 }

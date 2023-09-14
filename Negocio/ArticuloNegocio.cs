@@ -72,6 +72,12 @@ namespace Negocio
 
         }
     
+        public void agregarArticulo()
+        {
+
+
+        }
+
     
     }
 }
