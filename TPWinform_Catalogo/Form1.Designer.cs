@@ -61,9 +61,10 @@
             // 
             // pictureBoxFoto
             // 
-            this.pictureBoxFoto.Location = new System.Drawing.Point(586, 47);
+            this.pictureBoxFoto.Location = new System.Drawing.Point(556, 12);
             this.pictureBoxFoto.Name = "pictureBoxFoto";
             this.pictureBoxFoto.Size = new System.Drawing.Size(462, 365);
+            this.pictureBoxFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxFoto.TabIndex = 7;
             this.pictureBoxFoto.TabStop = false;
             // 
