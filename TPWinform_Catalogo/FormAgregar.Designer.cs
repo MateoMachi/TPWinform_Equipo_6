@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAgregar));
             this.labelNombre = new System.Windows.Forms.Label();
             this.labelID = new System.Windows.Forms.Label();
             this.labelPrecio = new System.Windows.Forms.Label();
@@ -37,170 +38,129 @@
             this.labelCategoria = new System.Windows.Forms.Label();
             this.labelImagen = new System.Windows.Forms.Label();
             this.textBoxNombre = new System.Windows.Forms.TextBox();
-            this.textBoxMarca = new System.Windows.Forms.TextBox();
-            this.textBoxCategoria = new System.Windows.Forms.TextBox();
-            this.textBoxDescripcion = new System.Windows.Forms.TextBox();
             this.textBoxCodArticulo = new System.Windows.Forms.TextBox();
             this.textBoxPrecio = new System.Windows.Forms.TextBox();
             this.textBoxId = new System.Windows.Forms.TextBox();
             this.textBoxUrlImagen = new System.Windows.Forms.TextBox();
             this.buttonConfirmar = new System.Windows.Forms.Button();
             this.buttonCancelar = new System.Windows.Forms.Button();
+            this.pictureBoxAlta = new System.Windows.Forms.PictureBox();
+            this.textBoxDescripcion = new System.Windows.Forms.TextBox();
+            this.comboBoxMarca = new System.Windows.Forms.ComboBox();
+            this.comboBoxCategoria = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAlta)).BeginInit();
             this.SuspendLayout();
             // 
             // labelNombre
             // 
-            this.labelNombre.AutoSize = true;
-            this.labelNombre.Location = new System.Drawing.Point(23, 29);
+            resources.ApplyResources(this.labelNombre, "labelNombre");
             this.labelNombre.Name = "labelNombre";
-            this.labelNombre.Size = new System.Drawing.Size(44, 13);
-            this.labelNombre.TabIndex = 0;
-            this.labelNombre.Text = "Nombre";
             // 
             // labelID
             // 
-            this.labelID.AutoSize = true;
-            this.labelID.Location = new System.Drawing.Point(23, 60);
+            resources.ApplyResources(this.labelID, "labelID");
             this.labelID.Name = "labelID";
-            this.labelID.Size = new System.Drawing.Size(16, 13);
-            this.labelID.TabIndex = 1;
-            this.labelID.Text = "Id";
             // 
             // labelPrecio
             // 
-            this.labelPrecio.AutoSize = true;
-            this.labelPrecio.Location = new System.Drawing.Point(23, 89);
+            resources.ApplyResources(this.labelPrecio, "labelPrecio");
             this.labelPrecio.Name = "labelPrecio";
-            this.labelPrecio.Size = new System.Drawing.Size(37, 13);
-            this.labelPrecio.TabIndex = 2;
-            this.labelPrecio.Text = "Precio";
             // 
             // labelCodArticulo
             // 
-            this.labelCodArticulo.AutoSize = true;
-            this.labelCodArticulo.Location = new System.Drawing.Point(23, 117);
+            resources.ApplyResources(this.labelCodArticulo, "labelCodArticulo");
             this.labelCodArticulo.Name = "labelCodArticulo";
-            this.labelCodArticulo.Size = new System.Drawing.Size(92, 13);
-            this.labelCodArticulo.TabIndex = 3;
-            this.labelCodArticulo.Text = "Codigo de articulo";
             // 
             // labelDescripcion
             // 
-            this.labelDescripcion.AutoSize = true;
-            this.labelDescripcion.Location = new System.Drawing.Point(23, 152);
+            resources.ApplyResources(this.labelDescripcion, "labelDescripcion");
             this.labelDescripcion.Name = "labelDescripcion";
-            this.labelDescripcion.Size = new System.Drawing.Size(63, 13);
-            this.labelDescripcion.TabIndex = 10;
-            this.labelDescripcion.Text = "Descripcion";
             // 
             // labelMarca
             // 
-            this.labelMarca.AutoSize = true;
-            this.labelMarca.Location = new System.Drawing.Point(23, 182);
+            resources.ApplyResources(this.labelMarca, "labelMarca");
             this.labelMarca.Name = "labelMarca";
-            this.labelMarca.Size = new System.Drawing.Size(37, 13);
-            this.labelMarca.TabIndex = 5;
-            this.labelMarca.Text = "Marca";
             // 
             // labelCategoria
             // 
-            this.labelCategoria.AutoSize = true;
-            this.labelCategoria.Location = new System.Drawing.Point(23, 215);
+            resources.ApplyResources(this.labelCategoria, "labelCategoria");
             this.labelCategoria.Name = "labelCategoria";
-            this.labelCategoria.Size = new System.Drawing.Size(52, 13);
-            this.labelCategoria.TabIndex = 6;
-            this.labelCategoria.Text = "Categoria";
             // 
             // labelImagen
             // 
-            this.labelImagen.AutoSize = true;
-            this.labelImagen.Location = new System.Drawing.Point(23, 242);
+            resources.ApplyResources(this.labelImagen, "labelImagen");
             this.labelImagen.Name = "labelImagen";
-            this.labelImagen.Size = new System.Drawing.Size(72, 13);
-            this.labelImagen.TabIndex = 7;
-            this.labelImagen.Text = "Url de imagen";
             // 
             // textBoxNombre
             // 
-            this.textBoxNombre.Location = new System.Drawing.Point(126, 29);
+            resources.ApplyResources(this.textBoxNombre, "textBoxNombre");
             this.textBoxNombre.Name = "textBoxNombre";
-            this.textBoxNombre.Size = new System.Drawing.Size(100, 20);
-            this.textBoxNombre.TabIndex = 11;
-            // 
-            // textBoxMarca
-            // 
-            this.textBoxMarca.Location = new System.Drawing.Point(126, 175);
-            this.textBoxMarca.Name = "textBoxMarca";
-            this.textBoxMarca.Size = new System.Drawing.Size(100, 20);
-            this.textBoxMarca.TabIndex = 5;
-            // 
-            // textBoxCategoria
-            // 
-            this.textBoxCategoria.Location = new System.Drawing.Point(126, 208);
-            this.textBoxCategoria.Name = "textBoxCategoria";
-            this.textBoxCategoria.Size = new System.Drawing.Size(100, 20);
-            this.textBoxCategoria.TabIndex = 6;
-            // 
-            // textBoxDescripcion
-            // 
-            this.textBoxDescripcion.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxDescripcion.Location = new System.Drawing.Point(126, 149);
-            this.textBoxDescripcion.Name = "textBoxDescripcion";
-            this.textBoxDescripcion.Size = new System.Drawing.Size(100, 20);
-            this.textBoxDescripcion.TabIndex = 4;
             // 
             // textBoxCodArticulo
             // 
-            this.textBoxCodArticulo.Location = new System.Drawing.Point(126, 117);
+            resources.ApplyResources(this.textBoxCodArticulo, "textBoxCodArticulo");
             this.textBoxCodArticulo.Name = "textBoxCodArticulo";
-            this.textBoxCodArticulo.Size = new System.Drawing.Size(100, 20);
-            this.textBoxCodArticulo.TabIndex = 3;
             // 
             // textBoxPrecio
             // 
-            this.textBoxPrecio.Location = new System.Drawing.Point(126, 89);
+            resources.ApplyResources(this.textBoxPrecio, "textBoxPrecio");
             this.textBoxPrecio.Name = "textBoxPrecio";
-            this.textBoxPrecio.Size = new System.Drawing.Size(100, 20);
-            this.textBoxPrecio.TabIndex = 2;
             // 
             // textBoxId
             // 
-            this.textBoxId.Location = new System.Drawing.Point(126, 60);
+            resources.ApplyResources(this.textBoxId, "textBoxId");
             this.textBoxId.Name = "textBoxId";
-            this.textBoxId.Size = new System.Drawing.Size(100, 20);
-            this.textBoxId.TabIndex = 1;
             // 
             // textBoxUrlImagen
             // 
-            this.textBoxUrlImagen.Location = new System.Drawing.Point(126, 239);
+            resources.ApplyResources(this.textBoxUrlImagen, "textBoxUrlImagen");
             this.textBoxUrlImagen.Name = "textBoxUrlImagen";
-            this.textBoxUrlImagen.Size = new System.Drawing.Size(100, 20);
-            this.textBoxUrlImagen.TabIndex = 7;
+            this.textBoxUrlImagen.Leave += new System.EventHandler(this.textBoxUrlImagen_Leave);
             // 
             // buttonConfirmar
             // 
-            this.buttonConfirmar.Location = new System.Drawing.Point(197, 398);
+            resources.ApplyResources(this.buttonConfirmar, "buttonConfirmar");
             this.buttonConfirmar.Name = "buttonConfirmar";
-            this.buttonConfirmar.Size = new System.Drawing.Size(75, 23);
-            this.buttonConfirmar.TabIndex = 9;
-            this.buttonConfirmar.Text = "Confirmar";
             this.buttonConfirmar.UseVisualStyleBackColor = true;
             this.buttonConfirmar.Click += new System.EventHandler(this.buttonConfirmar_Click);
             // 
             // buttonCancelar
             // 
-            this.buttonCancelar.Location = new System.Drawing.Point(70, 398);
+            resources.ApplyResources(this.buttonCancelar, "buttonCancelar");
             this.buttonCancelar.Name = "buttonCancelar";
-            this.buttonCancelar.Size = new System.Drawing.Size(75, 23);
-            this.buttonCancelar.TabIndex = 8;
-            this.buttonCancelar.Text = "Cancelar";
             this.buttonCancelar.UseVisualStyleBackColor = true;
+            // 
+            // pictureBoxAlta
+            // 
+            resources.ApplyResources(this.pictureBoxAlta, "pictureBoxAlta");
+            this.pictureBoxAlta.Name = "pictureBoxAlta";
+            this.pictureBoxAlta.TabStop = false;
+            // 
+            // textBoxDescripcion
+            // 
+            this.textBoxDescripcion.BackColor = System.Drawing.SystemColors.Window;
+            resources.ApplyResources(this.textBoxDescripcion, "textBoxDescripcion");
+            this.textBoxDescripcion.Name = "textBoxDescripcion";
+            // 
+            // comboBoxMarca
+            // 
+            this.comboBoxMarca.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBoxMarca, "comboBoxMarca");
+            this.comboBoxMarca.Name = "comboBoxMarca";
+            // 
+            // comboBoxCategoria
+            // 
+            this.comboBoxCategoria.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBoxCategoria, "comboBoxCategoria");
+            this.comboBoxCategoria.Name = "comboBoxCategoria";
             // 
             // FormAgregar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(359, 450);
+            this.Controls.Add(this.comboBoxCategoria);
+            this.Controls.Add(this.comboBoxMarca);
+            this.Controls.Add(this.pictureBoxAlta);
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.buttonConfirmar);
             this.Controls.Add(this.textBoxUrlImagen);
@@ -208,8 +168,6 @@
             this.Controls.Add(this.textBoxPrecio);
             this.Controls.Add(this.textBoxCodArticulo);
             this.Controls.Add(this.textBoxDescripcion);
-            this.Controls.Add(this.textBoxCategoria);
-            this.Controls.Add(this.textBoxMarca);
             this.Controls.Add(this.textBoxNombre);
             this.Controls.Add(this.labelImagen);
             this.Controls.Add(this.labelCategoria);
@@ -220,7 +178,8 @@
             this.Controls.Add(this.labelID);
             this.Controls.Add(this.labelNombre);
             this.Name = "FormAgregar";
-            this.Text = "FormAgregar";
+            
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAlta)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -237,14 +196,15 @@
         private System.Windows.Forms.Label labelCategoria;
         private System.Windows.Forms.Label labelImagen;
         private System.Windows.Forms.TextBox textBoxNombre;
-        private System.Windows.Forms.TextBox textBoxMarca;
-        private System.Windows.Forms.TextBox textBoxCategoria;
-        private System.Windows.Forms.TextBox textBoxDescripcion;
         private System.Windows.Forms.TextBox textBoxCodArticulo;
         private System.Windows.Forms.TextBox textBoxPrecio;
         private System.Windows.Forms.TextBox textBoxId;
         private System.Windows.Forms.TextBox textBoxUrlImagen;
         private System.Windows.Forms.Button buttonConfirmar;
         private System.Windows.Forms.Button buttonCancelar;
+        private System.Windows.Forms.PictureBox pictureBoxAlta;
+        private System.Windows.Forms.TextBox textBoxDescripcion;
+        private System.Windows.Forms.ComboBox comboBoxMarca;
+        private System.Windows.Forms.ComboBox comboBoxCategoria;
     }
 }

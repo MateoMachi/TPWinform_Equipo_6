@@ -27,18 +27,18 @@ namespace TPWinform_Catalogo
 
             try
             {
-/*
-                artic.Id = int.Parse( textBoxId.Text);
-                artic.nombre = textBoxNombre.Text;
-                artic.descripcion = textBoxDescripcion.Text;
-                artic.Categoria.nomCategoria = textBoxCategoria.Text;
-                artic.codigoArticulo = textBoxCodArticulo.Text;
-                artic.imagen.url = textBoxUrlImagen.Text;
-                artic.Marca.nomMarca = textBoxMarca.Text;
-                artic.precio = decimal.Parse(textBoxPrecio.Text );
+                /*
+                                artic.Id = int.Parse( textBoxId.Text);
+                                artic.nombre = textBoxNombre.Text;
+                                artic.descripcion = textBoxDescripcion.Text;
+                                artic.Categoria.nomCategoria = textBoxCategoria.Text;
+                                artic.codigoArticulo = textBoxCodArticulo.Text;
+                                artic.imagen.url = textBoxUrlImagen.Text;
+                                artic.Marca.nomMarca = textBoxMarca.Text;
+                                artic.precio = decimal.Parse(textBoxPrecio.Text );
 
-                articNegocio.agregarArticulo(artic);
-                */
+                                articNegocio.agregarArticulo(artic);
+                                */
             }
             catch (Exception)
             {
@@ -46,10 +46,41 @@ namespace TPWinform_Catalogo
                 throw;
             }
 
-           
+
 
 
 
         }
+
+        private void textBoxUrlImagen_Leave(object sender, EventArgs e)
+        {
+            cargarImagen(textBoxUrlImagen.Text);
+        }
+
+
+
+        private void cargarImagen(string imagen)
+        {
+
+
+            try
+            {
+
+                pictureBoxAlta.Load(imagen);
+
+
+
+            }
+            catch (Exception ex)
+            {
+
+                pictureBoxAlta.Load("https://uning.es/wp-content/uploads/2016/08/ef3-placeholder-image.jpg");
+            }
+
+
+
+        }
+
+       
     }
 }
