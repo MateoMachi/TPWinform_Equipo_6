@@ -30,10 +30,10 @@ namespace Negocio
                     Articulo art = new Articulo();
                     
                     art.Id = (int)Dat.Lector["Id"];
-                    if (!(Dat.Lector["Codigo"] is DBNull)) { art.codigoArticulo = (string)Dat.Lector["Codigo"]; }
-                    if (!(Dat.Lector["Nombre"] is DBNull))  { art.nombre = (string)Dat.Lector["Nombre"];  }
-                    if (!(Dat.Lector["Descripcion"] is DBNull )) { art.descripcion = (string)Dat.Lector["Descripcion"]; }
-                    if (!(Dat.Lector["Precio"] is DBNull )) { art.precio = (decimal)Dat.Lector["Precio"]; }
+                    if (!(Dat.Lector["Codigo"] is DBNull)) { art.CodigoArticulo = (string)Dat.Lector["Codigo"]; }
+                    if (!(Dat.Lector["Nombre"] is DBNull))  { art.Nombre = (string)Dat.Lector["Nombre"];  }
+                    if (!(Dat.Lector["Descripcion"] is DBNull )) { art.Descripcion = (string)Dat.Lector["Descripcion"]; }
+                    if (!(Dat.Lector["Precio"] is DBNull )) { art.Precio = (decimal)Dat.Lector["Precio"]; }
                  
 
                     
@@ -45,8 +45,8 @@ namespace Negocio
                    art.Marca = new Marca();
                     if (!(Dat.Lector["Marca"] is DBNull )) { art.Marca.nomMarca = (string)Dat.Lector["Marca"];  }
 
-                  art.imagen = new Imagen();
-                    if  (!(Dat.Lector["UrlImagen"] is DBNull)) { art.imagen.url = (string)Dat.Lector["UrlImagen"] ; }
+                  art.Imagen = new Imagen();
+                    if  (!(Dat.Lector["UrlImagen"] is DBNull)) { art.Imagen.url = (string)Dat.Lector["UrlImagen"] ; }
 
                             lista.Add(art);
                     
@@ -80,7 +80,7 @@ namespace Negocio
             try
             {
 
-                accesoDatos.setearConsulta("Insert into ARTICULOS (Codigo, Nombre, Descripcion, IdMarca, IdCategoria, Precio)values('" + nuevoArticulo.codigoArticulo + "','" + nuevoArticulo.nombre + "','" + nuevoArticulo.descripcion + "'," + nuevoArticulo.Marca.idMarca + "," + nuevoArticulo.Categoria.idCategoria + "," + nuevoArticulo.precio + ") Insert into Imagenes (idArticulo,imagenurl) values (" + nuevoArticulo.Id + ",'" + nuevoArticulo.imagen.url + "')");
+                accesoDatos.setearConsulta("Insert into ARTICULOS (Codigo, Nombre, Descripcion, IdMarca, IdCategoria, Precio)values('" + nuevoArticulo.CodigoArticulo + "','" + nuevoArticulo.Nombre + "','" + nuevoArticulo.Descripcion + "'," + nuevoArticulo.Marca.idMarca + "," + nuevoArticulo.Categoria.idCategoria + "," + nuevoArticulo.Precio + ") Insert into Imagenes (idArticulo,imagenurl) values (" + nuevoArticulo.Id + ",'" + nuevoArticulo.Imagen.url + "')");
                 accesoDatos.ejecutarAccion();
 
            

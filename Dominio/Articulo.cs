@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -9,18 +10,22 @@ namespace dominio
 {
     public class Articulo
     {
+        
+        
         public int Id { get; set; }
-        public string codigoArticulo { get; set; }
-        public string nombre { get; set; }
-        public string descripcion { get; set; }
+        [DisplayName("Codigo de articulo")]
+        public string CodigoArticulo { get; set; }
+        public string Nombre { get; set; }
+        [DisplayName("Descipción")]
+        public string Descripcion { get; set; }
         public Marca Marca { get; set; }
     
         public Categoria Categoria { get; set; }
       
-        public Imagen imagen { get; set; }
+        public Imagen Imagen { get; set; }
        
         
-        public decimal precio { get; set; }
+        public decimal Precio { get; set; }
 
     }
 }

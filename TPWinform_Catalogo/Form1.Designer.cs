@@ -48,11 +48,11 @@
             // 
             this.dataGridViewArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewArticulos.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dataGridViewArticulos.Location = new System.Drawing.Point(27, 67);
+            this.dataGridViewArticulos.Location = new System.Drawing.Point(12, 67);
             this.dataGridViewArticulos.MultiSelect = false;
             this.dataGridViewArticulos.Name = "dataGridViewArticulos";
             this.dataGridViewArticulos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewArticulos.Size = new System.Drawing.Size(534, 333);
+            this.dataGridViewArticulos.Size = new System.Drawing.Size(805, 263);
             this.dataGridViewArticulos.TabIndex = 0;
             this.dataGridViewArticulos.SelectionChanged += new System.EventHandler(this.dataGridViewCelulares_SelectionChanged);
             // 
@@ -64,9 +64,9 @@
             // 
             // pictureBoxFoto
             // 
-            this.pictureBoxFoto.Location = new System.Drawing.Point(598, 67);
+            this.pictureBoxFoto.Location = new System.Drawing.Point(823, 67);
             this.pictureBoxFoto.Name = "pictureBoxFoto";
-            this.pictureBoxFoto.Size = new System.Drawing.Size(403, 333);
+            this.pictureBoxFoto.Size = new System.Drawing.Size(243, 263);
             this.pictureBoxFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxFoto.TabIndex = 7;
             this.pictureBoxFoto.TabStop = false;

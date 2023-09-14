@@ -50,7 +50,7 @@ namespace TPWinform_Catalogo
             Articulo artic = (Articulo) dataGridViewArticulos.CurrentRow.DataBoundItem;
             
            
-            cargarImagen(artic.imagen.url);
+            cargarImagen(artic.Imagen.url);
         }
     
     
