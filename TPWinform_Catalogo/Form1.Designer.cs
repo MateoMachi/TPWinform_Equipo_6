@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.dataGridViewCelulares = new System.Windows.Forms.DataGridView();
+            this.dataGridViewArticulos = new System.Windows.Forms.DataGridView();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.pictureBoxFoto = new System.Windows.Forms.PictureBox();
             this.lblFiltro = new System.Windows.Forms.Label();
@@ -40,17 +40,18 @@
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCelulares)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewArticulos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFoto)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridViewCelulares
+            // dataGridViewArticulos
             // 
-            this.dataGridViewCelulares.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCelulares.Location = new System.Drawing.Point(15, 67);
-            this.dataGridViewCelulares.Name = "dataGridViewCelulares";
-            this.dataGridViewCelulares.Size = new System.Drawing.Size(627, 217);
-            this.dataGridViewCelulares.TabIndex = 0;
+            this.dataGridViewArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewArticulos.Location = new System.Drawing.Point(15, 67);
+            this.dataGridViewArticulos.Name = "dataGridViewArticulos";
+            this.dataGridViewArticulos.Size = new System.Drawing.Size(506, 217);
+            this.dataGridViewArticulos.TabIndex = 0;
+            this.dataGridViewArticulos.SelectionChanged += new System.EventHandler(this.dataGridViewCelulares_SelectionChanged);
             // 
             // imageList1
             // 
@@ -60,9 +61,9 @@
             // 
             // pictureBoxFoto
             // 
-            this.pictureBoxFoto.Location = new System.Drawing.Point(711, 3);
+            this.pictureBoxFoto.Location = new System.Drawing.Point(527, 6);
             this.pictureBoxFoto.Name = "pictureBoxFoto";
-            this.pictureBoxFoto.Size = new System.Drawing.Size(65, 133);
+            this.pictureBoxFoto.Size = new System.Drawing.Size(561, 432);
             this.pictureBoxFoto.TabIndex = 7;
             this.pictureBoxFoto.TabStop = false;
             // 
@@ -151,7 +152,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1091, 450);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnAgregar);
@@ -161,11 +162,11 @@
             this.Controls.Add(this.pictureBoxFoto);
             this.Controls.Add(this.btnRecargar);
             this.Controls.Add(this.btnBuscar);
-            this.Controls.Add(this.dataGridViewCelulares);
+            this.Controls.Add(this.dataGridViewArticulos);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCelulares)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewArticulos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFoto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -174,7 +175,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridViewCelulares;
+        private System.Windows.Forms.DataGridView dataGridViewArticulos;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.PictureBox pictureBoxFoto;
         private System.Windows.Forms.Label lblFiltro;

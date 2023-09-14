@@ -24,7 +24,9 @@ namespace TPWinform_Catalogo
         {
             ArticuloNegocio artNegocio = new ArticuloNegocio();
             ListaArticulo = artNegocio.listar();
-            dataGridViewCelulares.DataSource = ListaArticulo;
+            dataGridViewArticulos.DataSource = ListaArticulo;
+       
+        
         }
 
         private void lblFiltro_Click(object sender, EventArgs e)
@@ -39,6 +41,14 @@ namespace TPWinform_Catalogo
 
         private void buttonBuscar_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void dataGridViewCelulares_SelectionChanged(object sender, EventArgs e)
+        {
+
+            Articulo artic = (Articulo) dataGridViewArticulos.CurrentRow.DataBoundItem;
+            pictureBoxFoto.Load(artic.imagen.url);
 
         }
     }
