@@ -35,6 +35,7 @@ namespace Negocio
                     if (!(Dat.Lector["Descripcion"] is DBNull )) { art.descripcion = (string)Dat.Lector["Descripcion"]; }
                     if (!(Dat.Lector["Precio"] is DBNull )) { art.precio = (decimal)Dat.Lector["Precio"]; }
                  
+
                     
                     art.Categoria = new Categoria();
                     if (!(Dat.Lector["Categoria"] is DBNull )) { art.Categoria.nomCategoria = (string)Dat.Lector["Categoria"]; }
@@ -42,9 +43,12 @@ namespace Negocio
                         art.Categoria.nomCategoria = "Sin categoria";
 
                    art.Marca = new Marca();
-                    if (!(Dat.Lector["Marca"] is DBNull )) { art.Marca.nomMarca = (String)Dat.Lector["Marca"];  }
+                    if (!(Dat.Lector["Marca"] is DBNull )) { art.Marca.nomMarca = (string)Dat.Lector["Marca"];  }
 
-                    lista.Add(art);
+                  art.imagen = new Imagen();
+                    if  (!(Dat.Lector["UrlImagen"] is DBNull)) { art.imagen.url = (string)Dat.Lector["UrlImagen"] ; }
+
+                            lista.Add(art);
                     
 
 
