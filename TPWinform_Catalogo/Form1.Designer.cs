@@ -49,7 +49,7 @@
             this.dataGridViewArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewArticulos.Location = new System.Drawing.Point(15, 67);
             this.dataGridViewArticulos.Name = "dataGridViewArticulos";
-            this.dataGridViewArticulos.Size = new System.Drawing.Size(506, 217);
+            this.dataGridViewArticulos.Size = new System.Drawing.Size(506, 333);
             this.dataGridViewArticulos.TabIndex = 0;
             this.dataGridViewArticulos.SelectionChanged += new System.EventHandler(this.dataGridViewCelulares_SelectionChanged);
             // 
@@ -61,9 +61,9 @@
             // 
             // pictureBoxFoto
             // 
-            this.pictureBoxFoto.Location = new System.Drawing.Point(527, 6);
+            this.pictureBoxFoto.Location = new System.Drawing.Point(586, 47);
             this.pictureBoxFoto.Name = "pictureBoxFoto";
-            this.pictureBoxFoto.Size = new System.Drawing.Size(561, 432);
+            this.pictureBoxFoto.Size = new System.Drawing.Size(462, 365);
             this.pictureBoxFoto.TabIndex = 7;
             this.pictureBoxFoto.TabStop = false;
             // 
@@ -121,7 +121,7 @@
             // btnAgregar
             // 
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(12, 290);
+            this.btnAgregar.Location = new System.Drawing.Point(41, 415);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(75, 23);
             this.btnAgregar.TabIndex = 11;
@@ -131,7 +131,7 @@
             // btnModificar
             // 
             this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar.Location = new System.Drawing.Point(116, 290);
+            this.btnModificar.Location = new System.Drawing.Point(122, 415);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(75, 23);
             this.btnModificar.TabIndex = 12;
@@ -141,7 +141,7 @@
             // btnEliminar
             // 
             this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(227, 290);
+            this.btnEliminar.Location = new System.Drawing.Point(203, 415);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(75, 23);
             this.btnEliminar.TabIndex = 13;

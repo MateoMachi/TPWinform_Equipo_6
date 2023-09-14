@@ -48,8 +48,32 @@ namespace TPWinform_Catalogo
         {
 
             Articulo artic = (Articulo) dataGridViewArticulos.CurrentRow.DataBoundItem;
-            pictureBoxFoto.Load(artic.imagen.url);
+            
+           
+            cargarImagen(artic.imagen.url);
+        }
+    
+    
+    private void cargarImagen(string imagen)
+        {
+
+            
+            try
+            {
+
+                pictureBoxFoto.Load(imagen);
+
+
+
+            }
+            catch (Exception ex)
+            {
+
+                pictureBoxFoto.Load("https://uning.es/wp-content/uploads/2016/08/ef3-placeholder-image.jpg");
+            }
 
         }
+
+    
     }
 }
