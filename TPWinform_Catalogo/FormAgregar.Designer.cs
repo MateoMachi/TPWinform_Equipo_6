@@ -36,14 +36,14 @@
             this.labelMarca = new System.Windows.Forms.Label();
             this.labelCategoria = new System.Windows.Forms.Label();
             this.labelImagen = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBoxNombre = new System.Windows.Forms.TextBox();
+            this.textBoxMarca = new System.Windows.Forms.TextBox();
+            this.textBoxCategoria = new System.Windows.Forms.TextBox();
+            this.textBoxDescripcion = new System.Windows.Forms.TextBox();
+            this.textBoxCodArticulo = new System.Windows.Forms.TextBox();
+            this.textBoxPrecio = new System.Windows.Forms.TextBox();
+            this.textBoxId = new System.Windows.Forms.TextBox();
+            this.textBoxUrlImagen = new System.Windows.Forms.TextBox();
             this.buttonConfirmar = new System.Windows.Forms.Button();
             this.buttonCancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -120,61 +120,61 @@
             this.labelImagen.TabIndex = 7;
             this.labelImagen.Text = "Url de imagen";
             // 
-            // textBox1
+            // textBoxNombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(126, 29);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 8;
+            this.textBoxNombre.Location = new System.Drawing.Point(126, 29);
+            this.textBoxNombre.Name = "textBoxNombre";
+            this.textBoxNombre.Size = new System.Drawing.Size(100, 20);
+            this.textBoxNombre.TabIndex = 8;
             // 
-            // textBox2
+            // textBoxMarca
             // 
-            this.textBox2.Location = new System.Drawing.Point(126, 175);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 9;
+            this.textBoxMarca.Location = new System.Drawing.Point(126, 175);
+            this.textBoxMarca.Name = "textBoxMarca";
+            this.textBoxMarca.Size = new System.Drawing.Size(100, 20);
+            this.textBoxMarca.TabIndex = 9;
             // 
-            // textBox3
+            // textBoxCategoria
             // 
-            this.textBox3.Location = new System.Drawing.Point(126, 208);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 10;
+            this.textBoxCategoria.Location = new System.Drawing.Point(126, 208);
+            this.textBoxCategoria.Name = "textBoxCategoria";
+            this.textBoxCategoria.Size = new System.Drawing.Size(100, 20);
+            this.textBoxCategoria.TabIndex = 10;
             // 
-            // textBox4
+            // textBoxDescripcion
             // 
-            this.textBox4.Location = new System.Drawing.Point(126, 149);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 11;
+            this.textBoxDescripcion.Location = new System.Drawing.Point(126, 149);
+            this.textBoxDescripcion.Name = "textBoxDescripcion";
+            this.textBoxDescripcion.Size = new System.Drawing.Size(100, 20);
+            this.textBoxDescripcion.TabIndex = 11;
             // 
-            // textBox5
+            // textBoxCodArticulo
             // 
-            this.textBox5.Location = new System.Drawing.Point(126, 117);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 12;
+            this.textBoxCodArticulo.Location = new System.Drawing.Point(126, 117);
+            this.textBoxCodArticulo.Name = "textBoxCodArticulo";
+            this.textBoxCodArticulo.Size = new System.Drawing.Size(100, 20);
+            this.textBoxCodArticulo.TabIndex = 12;
             // 
-            // textBox6
+            // textBoxPrecio
             // 
-            this.textBox6.Location = new System.Drawing.Point(126, 89);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 13;
+            this.textBoxPrecio.Location = new System.Drawing.Point(126, 89);
+            this.textBoxPrecio.Name = "textBoxPrecio";
+            this.textBoxPrecio.Size = new System.Drawing.Size(100, 20);
+            this.textBoxPrecio.TabIndex = 13;
             // 
-            // textBox7
+            // textBoxId
             // 
-            this.textBox7.Location = new System.Drawing.Point(126, 60);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 14;
+            this.textBoxId.Location = new System.Drawing.Point(126, 60);
+            this.textBoxId.Name = "textBoxId";
+            this.textBoxId.Size = new System.Drawing.Size(100, 20);
+            this.textBoxId.TabIndex = 14;
             // 
-            // textBox8
+            // textBoxUrlImagen
             // 
-            this.textBox8.Location = new System.Drawing.Point(126, 239);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 15;
+            this.textBoxUrlImagen.Location = new System.Drawing.Point(126, 239);
+            this.textBoxUrlImagen.Name = "textBoxUrlImagen";
+            this.textBoxUrlImagen.Size = new System.Drawing.Size(100, 20);
+            this.textBoxUrlImagen.TabIndex = 15;
             // 
             // buttonConfirmar
             // 
@@ -202,14 +202,14 @@
             this.ClientSize = new System.Drawing.Size(359, 450);
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.buttonConfirmar);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxUrlImagen);
+            this.Controls.Add(this.textBoxId);
+            this.Controls.Add(this.textBoxPrecio);
+            this.Controls.Add(this.textBoxCodArticulo);
+            this.Controls.Add(this.textBoxDescripcion);
+            this.Controls.Add(this.textBoxCategoria);
+            this.Controls.Add(this.textBoxMarca);
+            this.Controls.Add(this.textBoxNombre);
             this.Controls.Add(this.labelImagen);
             this.Controls.Add(this.labelCategoria);
             this.Controls.Add(this.labelMarca);
@@ -235,14 +235,14 @@
         private System.Windows.Forms.Label labelMarca;
         private System.Windows.Forms.Label labelCategoria;
         private System.Windows.Forms.Label labelImagen;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textBoxNombre;
+        private System.Windows.Forms.TextBox textBoxMarca;
+        private System.Windows.Forms.TextBox textBoxCategoria;
+        private System.Windows.Forms.TextBox textBoxDescripcion;
+        private System.Windows.Forms.TextBox textBoxCodArticulo;
+        private System.Windows.Forms.TextBox textBoxPrecio;
+        private System.Windows.Forms.TextBox textBoxId;
+        private System.Windows.Forms.TextBox textBoxUrlImagen;
         private System.Windows.Forms.Button buttonConfirmar;
         private System.Windows.Forms.Button buttonCancelar;
     }

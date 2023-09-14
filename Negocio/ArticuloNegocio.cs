@@ -72,7 +72,7 @@ namespace Negocio
 
         }
     
-        public void agregarArticulo()
+        public void agregarArticulo(Articulo articulo)
         {
 
 
