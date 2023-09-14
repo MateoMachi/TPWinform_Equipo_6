@@ -72,10 +72,30 @@ namespace Negocio
 
         }
     
-        public void agregarArticulo(Articulo articulo)
+        public void agregarArticulo(Articulo nuevoArticulo)
         {
 
+            AccesoDatos accesoDatos = new AccesoDatos();
 
+            try
+            {
+
+                accesoDatos.setearConsulta("Insert into ARTICULOS (Codigo, Nombre, Descripcion, IdMarca, IdCategoria, Precio)values('" + nuevoArticulo.codigoArticulo + "','" + nuevoArticulo.nombre + "','" + nuevoArticulo.descripcion + "'," + nuevoArticulo.Marca.idMarca + "," + nuevoArticulo.Categoria.idCategoria + "," + nuevoArticulo.precio + ") Insert into Imagenes (idArticulo,imagenurl) values (" + nuevoArticulo.Id + ",'" + nuevoArticulo.imagen.url + "')");
+                accesoDatos.ejecutarAccion();
+
+           
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+            finally
+            {
+
+                accesoDatos.cerrarConexion();
+            }
         }
 
     

@@ -90,7 +90,7 @@
             this.labelDescripcion.Location = new System.Drawing.Point(23, 152);
             this.labelDescripcion.Name = "labelDescripcion";
             this.labelDescripcion.Size = new System.Drawing.Size(63, 13);
-            this.labelDescripcion.TabIndex = 4;
+            this.labelDescripcion.TabIndex = 10;
             this.labelDescripcion.Text = "Descripcion";
             // 
             // labelMarca
@@ -125,63 +125,64 @@
             this.textBoxNombre.Location = new System.Drawing.Point(126, 29);
             this.textBoxNombre.Name = "textBoxNombre";
             this.textBoxNombre.Size = new System.Drawing.Size(100, 20);
-            this.textBoxNombre.TabIndex = 8;
+            this.textBoxNombre.TabIndex = 11;
             // 
             // textBoxMarca
             // 
             this.textBoxMarca.Location = new System.Drawing.Point(126, 175);
             this.textBoxMarca.Name = "textBoxMarca";
             this.textBoxMarca.Size = new System.Drawing.Size(100, 20);
-            this.textBoxMarca.TabIndex = 9;
+            this.textBoxMarca.TabIndex = 5;
             // 
             // textBoxCategoria
             // 
             this.textBoxCategoria.Location = new System.Drawing.Point(126, 208);
             this.textBoxCategoria.Name = "textBoxCategoria";
             this.textBoxCategoria.Size = new System.Drawing.Size(100, 20);
-            this.textBoxCategoria.TabIndex = 10;
+            this.textBoxCategoria.TabIndex = 6;
             // 
             // textBoxDescripcion
             // 
+            this.textBoxDescripcion.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxDescripcion.Location = new System.Drawing.Point(126, 149);
             this.textBoxDescripcion.Name = "textBoxDescripcion";
             this.textBoxDescripcion.Size = new System.Drawing.Size(100, 20);
-            this.textBoxDescripcion.TabIndex = 11;
+            this.textBoxDescripcion.TabIndex = 4;
             // 
             // textBoxCodArticulo
             // 
             this.textBoxCodArticulo.Location = new System.Drawing.Point(126, 117);
             this.textBoxCodArticulo.Name = "textBoxCodArticulo";
             this.textBoxCodArticulo.Size = new System.Drawing.Size(100, 20);
-            this.textBoxCodArticulo.TabIndex = 12;
+            this.textBoxCodArticulo.TabIndex = 3;
             // 
             // textBoxPrecio
             // 
             this.textBoxPrecio.Location = new System.Drawing.Point(126, 89);
             this.textBoxPrecio.Name = "textBoxPrecio";
             this.textBoxPrecio.Size = new System.Drawing.Size(100, 20);
-            this.textBoxPrecio.TabIndex = 13;
+            this.textBoxPrecio.TabIndex = 2;
             // 
             // textBoxId
             // 
             this.textBoxId.Location = new System.Drawing.Point(126, 60);
             this.textBoxId.Name = "textBoxId";
             this.textBoxId.Size = new System.Drawing.Size(100, 20);
-            this.textBoxId.TabIndex = 14;
+            this.textBoxId.TabIndex = 1;
             // 
             // textBoxUrlImagen
             // 
             this.textBoxUrlImagen.Location = new System.Drawing.Point(126, 239);
             this.textBoxUrlImagen.Name = "textBoxUrlImagen";
             this.textBoxUrlImagen.Size = new System.Drawing.Size(100, 20);
-            this.textBoxUrlImagen.TabIndex = 15;
+            this.textBoxUrlImagen.TabIndex = 7;
             // 
             // buttonConfirmar
             // 
             this.buttonConfirmar.Location = new System.Drawing.Point(197, 398);
             this.buttonConfirmar.Name = "buttonConfirmar";
             this.buttonConfirmar.Size = new System.Drawing.Size(75, 23);
-            this.buttonConfirmar.TabIndex = 16;
+            this.buttonConfirmar.TabIndex = 9;
             this.buttonConfirmar.Text = "Confirmar";
             this.buttonConfirmar.UseVisualStyleBackColor = true;
             this.buttonConfirmar.Click += new System.EventHandler(this.buttonConfirmar_Click);
@@ -191,7 +192,7 @@
             this.buttonCancelar.Location = new System.Drawing.Point(70, 398);
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.Size = new System.Drawing.Size(75, 23);
-            this.buttonCancelar.TabIndex = 17;
+            this.buttonCancelar.TabIndex = 8;
             this.buttonCancelar.Text = "Cancelar";
             this.buttonCancelar.UseVisualStyleBackColor = true;
             // 

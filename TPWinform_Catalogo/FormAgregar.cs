@@ -27,7 +27,7 @@ namespace TPWinform_Catalogo
 
             try
             {
-
+/*
                 artic.Id = int.Parse( textBoxId.Text);
                 artic.nombre = textBoxNombre.Text;
                 artic.descripcion = textBoxDescripcion.Text;
@@ -38,7 +38,7 @@ namespace TPWinform_Catalogo
                 artic.precio = decimal.Parse(textBoxPrecio.Text );
 
                 articNegocio.agregarArticulo(artic);
-
+                */
             }
             catch (Exception)
             {
