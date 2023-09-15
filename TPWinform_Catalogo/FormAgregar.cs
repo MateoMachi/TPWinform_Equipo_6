@@ -14,7 +14,7 @@ namespace TPWinform_Catalogo
 {
     public partial class FormAgregar : Form
     {
-        public FormAgregar()
+        public FormAgregar(Articulo seleccionado)
         {
             InitializeComponent();
         }

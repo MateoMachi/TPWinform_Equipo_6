@@ -45,8 +45,8 @@ namespace Negocio
                    art.Marca = new Marca();
                     if (!(Dat.Lector["Marca"] is DBNull )) { art.Marca.nomMarca = (string)Dat.Lector["Marca"];  }
 
-                  art.Imagen = new Imagen();
-                    if  (!(Dat.Lector["UrlImagen"] is DBNull)) { art.Imagen.url = (string)Dat.Lector["UrlImagen"] ; }
+                  art.imagen = new Imagen();
+                    if  (!(Dat.Lector["UrlImagen"] is DBNull)) { art.imagen.url = (string)Dat.Lector["UrlImagen"] ; }
 
                             lista.Add(art);
                     
@@ -72,7 +72,7 @@ namespace Negocio
 
         }
     
-        public void agregarArticulo(Articulo nuevoArticulo)
+        public void AgregarArticulo(Articulo nuevoArticulo)
         {
 
             AccesoDatos accesoDatos = new AccesoDatos();
@@ -80,7 +80,7 @@ namespace Negocio
             try
             {
 
-                accesoDatos.setearConsulta("Insert into ARTICULOS (Codigo, Nombre, Descripcion, IdMarca, IdCategoria, Precio)values('" + nuevoArticulo.CodigoArticulo + "','" + nuevoArticulo.Nombre + "','" + nuevoArticulo.Descripcion + "'," + nuevoArticulo.Marca.idMarca + "," + nuevoArticulo.Categoria.idCategoria + "," + nuevoArticulo.Precio + ") Insert into Imagenes (idArticulo,imagenurl) values (" + nuevoArticulo.Id + ",'" + nuevoArticulo.Imagen.url + "')");
+                accesoDatos.setearConsulta("Insert into ARTICULOS (Codigo, Nombre, Descripcion, IdMarca, IdCategoria, Precio)values('" + nuevoArticulo.CodigoArticulo + "','" + nuevoArticulo.Nombre + "','" + nuevoArticulo.Descripcion + "'," + nuevoArticulo.Marca.idMarca + "," + nuevoArticulo.Categoria.idCategoria + "," + nuevoArticulo.Precio + ") Insert into Imagenes (idArticulo,imagenurl) values (" + nuevoArticulo.Id + ",'" + nuevoArticulo.imagen.url + "')");
                 accesoDatos.ejecutarAccion();
 
            
@@ -97,7 +97,20 @@ namespace Negocio
                 accesoDatos.cerrarConexion();
             }
         }
+        public void EliminarArticulo(int id)
+        {
+            try
+            {
+                AccesoDatos datos = new AccesoDatos();
+                datos.setearConsulta("delete from ARTICULOS where Id = @id");
+                datos.setParameters("@id", id);
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
 
-    
     }
 }
