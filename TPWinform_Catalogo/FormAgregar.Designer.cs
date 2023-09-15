@@ -144,12 +144,14 @@
             // 
             // comboBoxMarca
             // 
+            this.comboBoxMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxMarca.FormattingEnabled = true;
             resources.ApplyResources(this.comboBoxMarca, "comboBoxMarca");
             this.comboBoxMarca.Name = "comboBoxMarca";
             // 
             // comboBoxCategoria
             // 
+            this.comboBoxCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxCategoria.FormattingEnabled = true;
             resources.ApplyResources(this.comboBoxCategoria, "comboBoxCategoria");
             this.comboBoxCategoria.Name = "comboBoxCategoria";
@@ -178,7 +180,7 @@
             this.Controls.Add(this.labelID);
             this.Controls.Add(this.labelNombre);
             this.Name = "FormAgregar";
-            
+            this.Load += new System.EventHandler(this.FormAgregar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAlta)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

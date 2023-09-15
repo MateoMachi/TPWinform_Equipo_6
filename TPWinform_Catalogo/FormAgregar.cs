@@ -19,6 +19,11 @@ namespace TPWinform_Catalogo
             InitializeComponent();
         }
 
+        public FormAgregar()
+        {
+            InitializeComponent();
+        }
+
         private void buttonConfirmar_Click(object sender, EventArgs e)
         {
 
@@ -81,6 +86,69 @@ namespace TPWinform_Catalogo
 
         }
 
-       
-    }
-}
+        private void FormAgregar_Load(object sender, EventArgs e)
+        {
+           
+
+                AccesoDatos datos = new AccesoDatos();
+
+                Articulo art = new Articulo();
+                art.Categoria = new Categoria();
+                art.Marca = new Marca();
+
+                List<Articulo> lista = new List<Articulo>();
+
+
+                datos.setearConsulta("Select Descripcion as Categoria from CATEGORIAS");
+                datos.ejecutarLectura();
+
+                while (datos.Lector.Read())
+                {
+                    try
+                    {
+                        if (!(datos.Lector["Categoria"] is DBNull)) art.Categoria.nomCategoria = (string)datos.Lector["Categoria"];
+
+
+                        comboBoxCategoria.Items.Add(art.Categoria.nomCategoria);
+                    }
+                    catch (Exception ex)
+                    {
+                        throw ex;
+                    }
+                }
+
+                datos.cerrarConexion();
+
+                datos.setearConsulta("Select Descripcion as Marca from MARCAS");
+                datos.ejecutarLectura();
+
+
+
+                while (datos.Lector.Read())
+                {
+                    try
+                    {
+
+                        if (!(datos.Lector["Marca"] is DBNull)) art.Marca.nomMarca = (string)datos.Lector["Marca"];
+
+
+                        comboBoxMarca.Items.Add(art.Marca.nomMarca);
+
+
+                    }
+                    catch (Exception ex)
+                    {
+
+                        throw ex;
+                    }
+
+
+                }
+
+                datos.cerrarConexion();
+            }
+
+        }
+   }
+
+
