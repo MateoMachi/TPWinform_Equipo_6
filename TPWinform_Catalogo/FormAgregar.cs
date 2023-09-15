@@ -14,9 +14,14 @@ namespace TPWinform_Catalogo
 {
     public partial class FormAgregar : Form
     {
-        public FormAgregar(Articulo seleccionado)
+        private Articulo articuloSelec = null;
+
+        public FormAgregar(Articulo Seleccionado)
         {
+          
+            articuloSelec = Seleccionado;
             InitializeComponent();
+        
         }
 
         public FormAgregar()
@@ -26,6 +31,7 @@ namespace TPWinform_Catalogo
 
         private void buttonConfirmar_Click(object sender, EventArgs e)
         {
+
 
             Articulo artic = new Articulo();
             ArticuloNegocio articNegocio = new ArticuloNegocio();
@@ -50,6 +56,8 @@ namespace TPWinform_Catalogo
 
                 throw;
             }
+
+
 
 
 
@@ -145,10 +153,28 @@ namespace TPWinform_Catalogo
 
                 }
 
-                datos.cerrarConexion();
+               if (articuloSelec != null) 
+            {
+                cargarImagen(articuloSelec.imagen.url);
+                
+                textBoxNombre.Text = articuloSelec.Nombre;
+                textBoxCodArticulo.Text = articuloSelec.CodigoArticulo;
+                textBoxDescripcion.Text = articuloSelec.Descripcion;
+                textBoxPrecio.Text = articuloSelec.Precio.ToString();
+                textBoxUrlImagen.Text = articuloSelec.imagen.url;
+                comboBoxCategoria.Text = articuloSelec.Categoria.nomCategoria;
+                comboBoxMarca.Text = articuloSelec.Marca.nomMarca;
+            
+            }
+            
+            datos.cerrarConexion();
             }
 
+        private void buttonCancelar_Click(object sender, EventArgs e)
+        {
+            Close();
         }
+    }
    }
 
 

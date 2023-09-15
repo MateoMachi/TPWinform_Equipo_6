@@ -117,6 +117,7 @@ namespace TPWinform_Catalogo
         {
             FormAgregar ventanaAgregar = new FormAgregar();
             ventanaAgregar.ShowDialog();
+            cargar();        
         }
 
         private void btnModificar_Click(object sender, EventArgs e)

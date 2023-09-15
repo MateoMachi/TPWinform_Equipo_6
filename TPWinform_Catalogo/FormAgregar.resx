@@ -123,7 +123,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="labelNombre.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 29</value>
+    <value>76, 45</value>
   </data>
   <data name="labelNombre.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 13</value>
@@ -144,40 +144,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;labelNombre.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="labelID.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelID.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 60</value>
-  </data>
-  <data name="labelID.Size" type="System.Drawing.Size, System.Drawing">
-    <value>16, 13</value>
-  </data>
-  <data name="labelID.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="labelID.Text" xml:space="preserve">
-    <value>Id</value>
-  </data>
-  <data name="&gt;&gt;labelID.Name" xml:space="preserve">
-    <value>labelID</value>
-  </data>
-  <data name="&gt;&gt;labelID.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelID.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;labelID.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>16</value>
   </data>
   <data name="labelPrecio.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="labelPrecio.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 89</value>
+    <value>83, 71</value>
   </data>
   <data name="labelPrecio.Size" type="System.Drawing.Size, System.Drawing">
     <value>37, 13</value>
@@ -198,13 +171,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;labelPrecio.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>15</value>
   </data>
   <data name="labelCodArticulo.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="labelCodArticulo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 117</value>
+    <value>28, 97</value>
   </data>
   <data name="labelCodArticulo.Size" type="System.Drawing.Size, System.Drawing">
     <value>92, 13</value>
@@ -225,13 +198,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;labelCodArticulo.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>14</value>
   </data>
   <data name="labelDescripcion.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="labelDescripcion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 152</value>
+    <value>57, 123</value>
   </data>
   <data name="labelDescripcion.Size" type="System.Drawing.Size, System.Drawing">
     <value>63, 13</value>
@@ -252,13 +225,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;labelDescripcion.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>13</value>
   </data>
   <data name="labelMarca.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="labelMarca.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 182</value>
+    <value>83, 149</value>
   </data>
   <data name="labelMarca.Size" type="System.Drawing.Size, System.Drawing">
     <value>37, 13</value>
@@ -279,13 +252,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;labelMarca.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>12</value>
   </data>
   <data name="labelCategoria.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="labelCategoria.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 215</value>
+    <value>68, 176</value>
   </data>
   <data name="labelCategoria.Size" type="System.Drawing.Size, System.Drawing">
     <value>52, 13</value>
@@ -306,13 +279,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;labelCategoria.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>11</value>
   </data>
   <data name="labelImagen.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="labelImagen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 242</value>
+    <value>48, 205</value>
   </data>
   <data name="labelImagen.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 13</value>
@@ -333,16 +306,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;labelImagen.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>10</value>
   </data>
   <data name="textBoxNombre.Location" type="System.Drawing.Point, System.Drawing">
-    <value>126, 29</value>
+    <value>126, 42</value>
   </data>
   <data name="textBoxNombre.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 20</value>
   </data>
   <data name="textBoxNombre.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+    <value>0</value>
   </data>
   <data name="&gt;&gt;textBoxNombre.Name" xml:space="preserve">
     <value>textBoxNombre</value>
@@ -354,10 +327,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBoxNombre.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>9</value>
   </data>
   <data name="textBoxCodArticulo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>126, 117</value>
+    <value>126, 94</value>
   </data>
   <data name="textBoxCodArticulo.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 20</value>
@@ -375,10 +348,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBoxCodArticulo.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="textBoxPrecio.Location" type="System.Drawing.Point, System.Drawing">
-    <value>126, 89</value>
+    <value>126, 68</value>
   </data>
   <data name="textBoxPrecio.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 20</value>
@@ -396,31 +369,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBoxPrecio.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="textBoxId.Location" type="System.Drawing.Point, System.Drawing">
-    <value>126, 60</value>
-  </data>
-  <data name="textBoxId.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
-  </data>
-  <data name="textBoxId.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;textBoxId.Name" xml:space="preserve">
-    <value>textBoxId</value>
-  </data>
-  <data name="&gt;&gt;textBoxId.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxId.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;textBoxId.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
   <data name="textBoxUrlImagen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>126, 239</value>
+    <value>126, 202</value>
   </data>
   <data name="textBoxUrlImagen.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 20</value>
@@ -441,7 +393,7 @@
     <value>5</value>
   </data>
   <data name="buttonConfirmar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>197, 398</value>
+    <value>164, 398</value>
   </data>
   <data name="buttonConfirmar.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -489,10 +441,10 @@
     <value>3</value>
   </data>
   <data name="pictureBoxAlta.Location" type="System.Drawing.Point, System.Drawing">
-    <value>285, 29</value>
+    <value>253, 12</value>
   </data>
   <data name="pictureBoxAlta.Size" type="System.Drawing.Size, System.Drawing">
-    <value>202, 230</value>
+    <value>234, 247</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="pictureBoxAlta.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
@@ -514,7 +466,7 @@
     <value>2</value>
   </data>
   <data name="textBoxDescripcion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>126, 149</value>
+    <value>126, 120</value>
   </data>
   <data name="textBoxDescripcion.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 20</value>
@@ -532,16 +484,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBoxDescripcion.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>8</value>
   </data>
   <data name="comboBoxMarca.Location" type="System.Drawing.Point, System.Drawing">
-    <value>126, 182</value>
+    <value>126, 146</value>
   </data>
   <data name="comboBoxMarca.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 21</value>
   </data>
   <data name="comboBoxMarca.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+    <value>5</value>
   </data>
   <data name="&gt;&gt;comboBoxMarca.Name" xml:space="preserve">
     <value>comboBoxMarca</value>
@@ -556,13 +508,13 @@
     <value>1</value>
   </data>
   <data name="comboBoxCategoria.Location" type="System.Drawing.Point, System.Drawing">
-    <value>126, 210</value>
+    <value>126, 173</value>
   </data>
   <data name="comboBoxCategoria.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 21</value>
   </data>
   <data name="comboBoxCategoria.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
+    <value>6</value>
   </data>
   <data name="&gt;&gt;comboBoxCategoria.Name" xml:space="preserve">
     <value>comboBoxCategoria</value>
@@ -585,8 +537,11 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>552, 450</value>
   </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>FormAgregar</value>
+    <value>Detalles</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FormAgregar</value>

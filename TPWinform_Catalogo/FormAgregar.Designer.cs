@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAgregar));
             this.labelNombre = new System.Windows.Forms.Label();
-            this.labelID = new System.Windows.Forms.Label();
             this.labelPrecio = new System.Windows.Forms.Label();
             this.labelCodArticulo = new System.Windows.Forms.Label();
             this.labelDescripcion = new System.Windows.Forms.Label();
@@ -40,7 +39,6 @@
             this.textBoxNombre = new System.Windows.Forms.TextBox();
             this.textBoxCodArticulo = new System.Windows.Forms.TextBox();
             this.textBoxPrecio = new System.Windows.Forms.TextBox();
-            this.textBoxId = new System.Windows.Forms.TextBox();
             this.textBoxUrlImagen = new System.Windows.Forms.TextBox();
             this.buttonConfirmar = new System.Windows.Forms.Button();
             this.buttonCancelar = new System.Windows.Forms.Button();
@@ -55,11 +53,6 @@
             // 
             resources.ApplyResources(this.labelNombre, "labelNombre");
             this.labelNombre.Name = "labelNombre";
-            // 
-            // labelID
-            // 
-            resources.ApplyResources(this.labelID, "labelID");
-            this.labelID.Name = "labelID";
             // 
             // labelPrecio
             // 
@@ -106,11 +99,6 @@
             resources.ApplyResources(this.textBoxPrecio, "textBoxPrecio");
             this.textBoxPrecio.Name = "textBoxPrecio";
             // 
-            // textBoxId
-            // 
-            resources.ApplyResources(this.textBoxId, "textBoxId");
-            this.textBoxId.Name = "textBoxId";
-            // 
             // textBoxUrlImagen
             // 
             resources.ApplyResources(this.textBoxUrlImagen, "textBoxUrlImagen");
@@ -129,6 +117,7 @@
             resources.ApplyResources(this.buttonCancelar, "buttonCancelar");
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.UseVisualStyleBackColor = true;
+            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
             // pictureBoxAlta
             // 
@@ -160,13 +149,13 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.HotTrack;
             this.Controls.Add(this.comboBoxCategoria);
             this.Controls.Add(this.comboBoxMarca);
             this.Controls.Add(this.pictureBoxAlta);
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.buttonConfirmar);
             this.Controls.Add(this.textBoxUrlImagen);
-            this.Controls.Add(this.textBoxId);
             this.Controls.Add(this.textBoxPrecio);
             this.Controls.Add(this.textBoxCodArticulo);
             this.Controls.Add(this.textBoxDescripcion);
@@ -177,7 +166,6 @@
             this.Controls.Add(this.labelDescripcion);
             this.Controls.Add(this.labelCodArticulo);
             this.Controls.Add(this.labelPrecio);
-            this.Controls.Add(this.labelID);
             this.Controls.Add(this.labelNombre);
             this.Name = "FormAgregar";
             this.Load += new System.EventHandler(this.FormAgregar_Load);
@@ -190,7 +178,6 @@
         #endregion
 
         private System.Windows.Forms.Label labelNombre;
-        private System.Windows.Forms.Label labelID;
         private System.Windows.Forms.Label labelPrecio;
         private System.Windows.Forms.Label labelCodArticulo;
         private System.Windows.Forms.Label labelDescripcion;
@@ -200,7 +187,6 @@
         private System.Windows.Forms.TextBox textBoxNombre;
         private System.Windows.Forms.TextBox textBoxCodArticulo;
         private System.Windows.Forms.TextBox textBoxPrecio;
-        private System.Windows.Forms.TextBox textBoxId;
         private System.Windows.Forms.TextBox textBoxUrlImagen;
         private System.Windows.Forms.Button buttonConfirmar;
         private System.Windows.Forms.Button buttonCancelar;

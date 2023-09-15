@@ -46,13 +46,16 @@
             // 
             // dataGridViewArticulos
             // 
+            this.dataGridViewArticulos.BackgroundColor = System.Drawing.SystemColors.InactiveBorder;
             this.dataGridViewArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewArticulos.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dataGridViewArticulos.GridColor = System.Drawing.SystemColors.MenuHighlight;
             this.dataGridViewArticulos.Location = new System.Drawing.Point(12, 67);
             this.dataGridViewArticulos.MultiSelect = false;
             this.dataGridViewArticulos.Name = "dataGridViewArticulos";
+            this.dataGridViewArticulos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
             this.dataGridViewArticulos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewArticulos.Size = new System.Drawing.Size(567, 177);
+            this.dataGridViewArticulos.Size = new System.Drawing.Size(690, 200);
             this.dataGridViewArticulos.TabIndex = 0;
             this.dataGridViewArticulos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewArticulos_CellContentClick);
             this.dataGridViewArticulos.SelectionChanged += new System.EventHandler(this.dataGridViewCelulares_SelectionChanged);
@@ -126,7 +129,7 @@
             // btnAgregar
             // 
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(15, 250);
+            this.btnAgregar.Location = new System.Drawing.Point(42, 295);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(75, 23);
             this.btnAgregar.TabIndex = 11;
@@ -137,7 +140,7 @@
             // btnModificar
             // 
             this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar.Location = new System.Drawing.Point(113, 250);
+            this.btnModificar.Location = new System.Drawing.Point(123, 295);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(75, 23);
             this.btnModificar.TabIndex = 12;
@@ -147,19 +150,26 @@
             // 
             // btnEliminar
             // 
+            this.btnEliminar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnEliminar.BackColor = System.Drawing.SystemColors.Control;
+            this.btnEliminar.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(220, 250);
+            this.btnEliminar.Location = new System.Drawing.Point(204, 295);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(75, 23);
             this.btnEliminar.TabIndex = 13;
             this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.UseVisualStyleBackColor = false;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
-            // Form1
+            // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1088, 450);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnModificar);
@@ -171,8 +181,9 @@
             this.Controls.Add(this.btnRecargar);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.dataGridViewArticulos);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "FrmPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Trabajo practico winform";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewArticulos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFoto)).EndInit();
