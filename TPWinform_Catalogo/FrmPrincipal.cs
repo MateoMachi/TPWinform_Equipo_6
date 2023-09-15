@@ -13,10 +13,10 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace TPWinform_Catalogo
 {
-    public partial class Form1 : Form
+    public partial class FrmPrincipal : Form
     {
         private List<Articulo> listaArticulo;
-        public Form1()
+        public FrmPrincipal()
         {
             InitializeComponent();
         }
@@ -115,7 +115,8 @@ namespace TPWinform_Catalogo
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-
+            FormAgregar ventanaAgregar = new FormAgregar();
+            ventanaAgregar.ShowDialog();
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
