@@ -350,27 +350,6 @@
   <data name="&gt;&gt;textBoxCodArticulo.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="textBoxPrecio.Location" type="System.Drawing.Point, System.Drawing">
-    <value>126, 68</value>
-  </data>
-  <data name="textBoxPrecio.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
-  </data>
-  <data name="textBoxPrecio.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;textBoxPrecio.Name" xml:space="preserve">
-    <value>textBoxPrecio</value>
-  </data>
-  <data name="&gt;&gt;textBoxPrecio.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxPrecio.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;textBoxPrecio.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
   <data name="textBoxUrlImagen.Location" type="System.Drawing.Point, System.Drawing">
     <value>126, 202</value>
   </data>
@@ -390,7 +369,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBoxUrlImagen.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="buttonConfirmar.Location" type="System.Drawing.Point, System.Drawing">
     <value>164, 398</value>
@@ -414,7 +393,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;buttonConfirmar.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="buttonCancelar.Location" type="System.Drawing.Point, System.Drawing">
     <value>70, 398</value>
@@ -438,7 +417,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;buttonCancelar.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="pictureBoxAlta.Location" type="System.Drawing.Point, System.Drawing">
     <value>253, 12</value>
@@ -463,7 +442,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBoxAlta.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="textBoxDescripcion.Location" type="System.Drawing.Point, System.Drawing">
     <value>126, 120</value>
@@ -505,7 +484,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;comboBoxMarca.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="comboBoxCategoria.Location" type="System.Drawing.Point, System.Drawing">
     <value>126, 173</value>
@@ -526,6 +505,27 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;comboBoxCategoria.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cajaNumerica.Location" type="System.Drawing.Point, System.Drawing">
+    <value>126, 68</value>
+  </data>
+  <data name="cajaNumerica.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="cajaNumerica.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;cajaNumerica.Name" xml:space="preserve">
+    <value>cajaNumerica</value>
+  </data>
+  <data name="&gt;&gt;cajaNumerica.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cajaNumerica.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cajaNumerica.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

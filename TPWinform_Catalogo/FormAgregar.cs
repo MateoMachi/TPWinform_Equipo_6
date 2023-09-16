@@ -31,14 +31,14 @@ namespace TPWinform_Catalogo
 
         private void buttonConfirmar_Click(object sender, EventArgs e)
         {
-            //Articulo articulo = new Articulo();
+            
             ArticuloNegocio negocio = new ArticuloNegocio();
             try
             {
 
 
 
-                if (textBoxNombre.Text != ""  && textBoxCodArticulo.Text != "" && textBoxPrecio.Text != "")
+                if (textBoxNombre.Text != ""  && textBoxCodArticulo.Text != "" && cajaNumerica.Text != "")
                 {
                     if (articuloSelec == null)
                     {
@@ -98,7 +98,7 @@ namespace TPWinform_Catalogo
 
                     articuloSelec.imagen.idArticulo = negocio.TraerUltimoId();
                     articuloSelec.imagen.url = textBoxDescripcion.Text;
-                    articuloSelec.Precio = decimal.Parse(textBoxPrecio.Text);
+                    articuloSelec.Precio = decimal.Parse(cajaNumerica.Text);
 
                     if (articuloSelec.Id != 0)
                     {
@@ -116,7 +116,7 @@ namespace TPWinform_Catalogo
                 }
                 else
                 {
-                    textBoxPrecio.BackColor = Color.Red;
+                    cajaNumerica.BackColor = Color.Red;
                     textBoxNombre.BackColor = Color.Red;
                     textBoxCodArticulo.BackColor = Color.Red;
                     MessageBox.Show("Por favor cargue Nombre, Codigo y Precio", "ATENCION ");
@@ -232,7 +232,7 @@ namespace TPWinform_Catalogo
                 textBoxNombre.Text = articuloSelec.Nombre;
                 textBoxCodArticulo.Text = articuloSelec.CodigoArticulo;
                 textBoxDescripcion.Text = articuloSelec.Descripcion;
-                textBoxPrecio.Text = articuloSelec.Precio.ToString();
+                cajaNumerica.Text = articuloSelec.Precio.ToString();
                 textBoxUrlImagen.Text = articuloSelec.imagen.url;
                 comboBoxCategoria.Text = articuloSelec.Categoria.nomCategoria;
                 comboBoxMarca.Text = articuloSelec.Marca.nomMarca;

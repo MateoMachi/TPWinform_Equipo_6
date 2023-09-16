@@ -40,7 +40,6 @@ namespace TPWinform_Catalogo
             this.labelImagen = new System.Windows.Forms.Label();
             this.textBoxNombre = new System.Windows.Forms.TextBox();
             this.textBoxCodArticulo = new System.Windows.Forms.TextBox();
-            this.textBoxPrecio = new System.Windows.Forms.TextBox();
             this.textBoxUrlImagen = new System.Windows.Forms.TextBox();
             this.buttonConfirmar = new System.Windows.Forms.Button();
             this.buttonCancelar = new System.Windows.Forms.Button();
@@ -48,7 +47,9 @@ namespace TPWinform_Catalogo
             this.textBoxDescripcion = new System.Windows.Forms.TextBox();
             this.comboBoxMarca = new System.Windows.Forms.ComboBox();
             this.comboBoxCategoria = new System.Windows.Forms.ComboBox();
+            this.cajaNumerica = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAlta)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cajaNumerica)).BeginInit();
             this.SuspendLayout();
             // 
             // labelNombre
@@ -96,11 +97,6 @@ namespace TPWinform_Catalogo
             resources.ApplyResources(this.textBoxCodArticulo, "textBoxCodArticulo");
             this.textBoxCodArticulo.Name = "textBoxCodArticulo";
             // 
-            // textBoxPrecio
-            // 
-            resources.ApplyResources(this.textBoxPrecio, "textBoxPrecio");
-            this.textBoxPrecio.Name = "textBoxPrecio";
-            // 
             // textBoxUrlImagen
             // 
             resources.ApplyResources(this.textBoxUrlImagen, "textBoxUrlImagen");
@@ -147,18 +143,23 @@ namespace TPWinform_Catalogo
             resources.ApplyResources(this.comboBoxCategoria, "comboBoxCategoria");
             this.comboBoxCategoria.Name = "comboBoxCategoria";
             // 
+            // cajaNumerica
+            // 
+            resources.ApplyResources(this.cajaNumerica, "cajaNumerica");
+            this.cajaNumerica.Name = "cajaNumerica";
+            // 
             // FormAgregar
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.Controls.Add(this.cajaNumerica);
             this.Controls.Add(this.comboBoxCategoria);
             this.Controls.Add(this.comboBoxMarca);
             this.Controls.Add(this.pictureBoxAlta);
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.buttonConfirmar);
             this.Controls.Add(this.textBoxUrlImagen);
-            this.Controls.Add(this.textBoxPrecio);
             this.Controls.Add(this.textBoxCodArticulo);
             this.Controls.Add(this.textBoxDescripcion);
             this.Controls.Add(this.textBoxNombre);
@@ -174,6 +175,7 @@ namespace TPWinform_Catalogo
             this.Name = "FormAgregar";
             this.Load += new System.EventHandler(this.FormAgregar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAlta)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cajaNumerica)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -190,7 +192,6 @@ namespace TPWinform_Catalogo
         private System.Windows.Forms.Label labelImagen;
         private System.Windows.Forms.TextBox textBoxNombre;
         private System.Windows.Forms.TextBox textBoxCodArticulo;
-        private System.Windows.Forms.TextBox textBoxPrecio;
         private System.Windows.Forms.TextBox textBoxUrlImagen;
         private System.Windows.Forms.Button buttonConfirmar;
         private System.Windows.Forms.Button buttonCancelar;
@@ -198,6 +199,6 @@ namespace TPWinform_Catalogo
         private System.Windows.Forms.TextBox textBoxDescripcion;
         private System.Windows.Forms.ComboBox comboBoxMarca;
         private System.Windows.Forms.ComboBox comboBoxCategoria;
-
+        private System.Windows.Forms.NumericUpDown cajaNumerica;
     }
 }
