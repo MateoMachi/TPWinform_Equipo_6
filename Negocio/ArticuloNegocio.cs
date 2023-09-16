@@ -45,7 +45,11 @@ namespace Negocio
                    art.Marca = new Marca();
                     if (!(Dat.Lector["Marca"] is DBNull )) { art.Marca.nomMarca = (string)Dat.Lector["Marca"];  }
 
-                  art.imagen = new Imagen();
+                    else
+                    art.Marca.nomMarca = "Sin Marca";
+
+
+                    art.imagen = new Imagen();
                     if  (!(Dat.Lector["UrlImagen"] is DBNull)) { art.imagen.url = (string)Dat.Lector["UrlImagen"] ; }
 
                             lista.Add(art);
