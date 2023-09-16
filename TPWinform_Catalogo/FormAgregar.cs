@@ -37,8 +37,7 @@ namespace TPWinform_Catalogo
             {
 
 
-                string marca;
-                string categoria;
+           
                 if (buttonConfirmar.Text != "" && textBoxDescripcion.Text != "" && textBoxPrecio.Text != "")
                 {
                     if (articuloSelec == null)
@@ -246,6 +245,11 @@ namespace TPWinform_Catalogo
         private void buttonCancelar_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void textBoxUrlImagen_TextChanged(object sender, EventArgs e)
+        {
+            cargarImagen(textBoxUrlImagen.Text);
         }
     }
    }

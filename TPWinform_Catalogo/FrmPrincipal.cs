@@ -102,22 +102,51 @@ namespace TPWinform_Catalogo
 
         private void buttonBuscar_Click(object sender, EventArgs e)
         {
+            List<Articulo> listaArtFiltrada;
+
+            string filtro = txtFiltro.Text;
+
+
+            if (filtro != "")
+
+
+            {
+
+                listaArtFiltrada = listaArticulo.FindAll(L => L.Nombre.ToUpper().Contains(filtro.ToUpper())
+                || L.Marca.nomMarca.ToUpper().Contains(filtro.ToUpper())
+                || L.Descripcion.ToUpper().Contains(filtro.ToUpper())
+                                                                       );
+
+
+            }
+            else
+            {
+                listaArtFiltrada = listaArticulo;
+
+
+
+            }
+
+            dataGridViewArticulos.DataSource = null;
+            dataGridViewArticulos.DataSource = listaArtFiltrada;
+            ocultarColumnas();
+
 
         }
 
 
 
 
-        
 
 
-       
+
+
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             FormAgregar ventanaAgregar = new FormAgregar();
             ventanaAgregar.ShowDialog();
-            cargar();        
+            cargar();
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
@@ -125,17 +154,29 @@ namespace TPWinform_Catalogo
 
 
             Articulo seleccionado;
-            seleccionado = (Articulo)dataGridViewArticulos.CurrentRow.DataBoundItem;
+            if (dataGridViewArticulos.CurrentRow != null)
+            {
 
-            FormAgregar modificar = new FormAgregar(seleccionado);
-            modificar.ShowDialog();
-            cargar();
+
+                seleccionado = (Articulo)dataGridViewArticulos.CurrentRow.DataBoundItem;
+                FormAgregar modificar = new FormAgregar(seleccionado);
+                modificar.ShowDialog();
+                cargar();
+            }
+
+            else
+            {
+
+                MessageBox.Show("seleccione un articulo", "ATENCION");
+
+
+            }
 
         }
 
         private void dataGridViewArticulos_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -143,25 +184,48 @@ namespace TPWinform_Catalogo
 
             ArticuloNegocio articulo = new ArticuloNegocio();
             Articulo seleccionado;
-            try
+
+            if (dataGridViewArticulos.CurrentRow != null)
             {
-                DialogResult respuesta = MessageBox.Show("Quieres Eliminar Este Articulo?", "Eliminando..", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-                if (respuesta == DialogResult.Yes)
+
+
+                try
                 {
-                    seleccionado = (Articulo)dataGridViewArticulos.CurrentRow.DataBoundItem;
-                    articulo.EliminarArticulo(seleccionado.Id);
-                    cargar();
+                    DialogResult respuesta = MessageBox.Show("Quieres Eliminar Este Articulo?", "Eliminando..", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                    if (respuesta == DialogResult.Yes)
+                    {
+                        seleccionado = (Articulo)dataGridViewArticulos.CurrentRow.DataBoundItem;
+                        articulo.EliminarArticulo(seleccionado.Id);
+                        cargar();
+                    }
                 }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+
+
             }
-            catch (Exception ex)
+
+            else
             {
-                MessageBox.Show(ex.ToString());
+
+
+                MessageBox.Show("seleccione un articulo", "ATENCION");
+
+
+
             }
+
+
+
+
+
         }
 
-
-
-            
-
+        private void btnRecargar_Click(object sender, EventArgs e)
+        {
+            cargar();
+        }
     }
-    }
+}

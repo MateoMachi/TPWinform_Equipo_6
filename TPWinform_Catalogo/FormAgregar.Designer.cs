@@ -105,7 +105,7 @@ namespace TPWinform_Catalogo
             // 
             resources.ApplyResources(this.textBoxUrlImagen, "textBoxUrlImagen");
             this.textBoxUrlImagen.Name = "textBoxUrlImagen";
-          
+            this.textBoxUrlImagen.TextChanged += new System.EventHandler(this.textBoxUrlImagen_TextChanged);
             // 
             // buttonConfirmar
             // 
