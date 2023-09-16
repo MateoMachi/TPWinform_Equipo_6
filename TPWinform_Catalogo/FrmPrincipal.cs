@@ -10,7 +10,6 @@ using System.Windows.Forms;
 using Negocio;
 using dominio;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using System.Data.SqlTypes;
 
 namespace TPWinform_Catalogo
 {
@@ -104,51 +103,21 @@ namespace TPWinform_Catalogo
         private void buttonBuscar_Click(object sender, EventArgs e)
         {
 
-            List<Articulo> listaArtFiltrada;
-
-            string filtro = txtFiltro.Text;
-
-
-            if (filtro != "")
-
-
-            {
-
-                listaArtFiltrada = listaArticulo.FindAll(L => L.Nombre.ToUpper().Contains(filtro.ToUpper())
-                || L.Marca.nomMarca.ToUpper().Contains(filtro.ToUpper())
-                || L.Descripcion.ToUpper().Contains(filtro.ToUpper())
-                                                                       );
-
-
-            }
-            else
-            {
-                listaArtFiltrada = listaArticulo;
-
-
-
-            }
-
-            dataGridViewArticulos.DataSource = null;
-            dataGridViewArticulos.DataSource = listaArtFiltrada;
-            ocultarColumnas();
-
-
         }
 
 
 
 
+        
 
 
-
-
+       
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             FormAgregar ventanaAgregar = new FormAgregar();
             ventanaAgregar.ShowDialog();
-            cargar();
+            cargar();        
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
@@ -156,72 +125,43 @@ namespace TPWinform_Catalogo
 
 
             Articulo seleccionado;
+            seleccionado = (Articulo)dataGridViewArticulos.CurrentRow.DataBoundItem;
 
-
-            if (dataGridViewArticulos.CurrentRow != null)
-            {
-
-
-                seleccionado = (Articulo)dataGridViewArticulos.CurrentRow.DataBoundItem;
-                FormAgregar modificar = new FormAgregar(seleccionado);
-                modificar.ShowDialog();
-                cargar();
-            }
-
-            else
-            {
-
-                MessageBox.Show("seleccione un articulo", "ATENCION");
-
-
-            }
-
-
-
-
-
-
+            FormAgregar modificar = new FormAgregar(seleccionado);
+            modificar.ShowDialog();
+            cargar();
 
         }
 
-
+        private void dataGridViewArticulos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
 
             ArticuloNegocio articulo = new ArticuloNegocio();
             Articulo seleccionado;
-
-
-            if (dataGridViewArticulos.CurrentRow != null)
+            try
             {
-
-
-                try
+                DialogResult respuesta = MessageBox.Show("Quieres Eliminar Este Articulo?", "Eliminando..", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (respuesta == DialogResult.Yes)
                 {
-                    DialogResult respuesta = MessageBox.Show("Quieres Eliminar Este Articulo?", "Eliminando..", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-                    if (respuesta == DialogResult.Yes)
-                    {
-                        seleccionado = (Articulo)dataGridViewArticulos.CurrentRow.DataBoundItem;
-                        articulo.EliminarArticulo(seleccionado.Id);
-                        cargar();
-                    }
+                    seleccionado = (Articulo)dataGridViewArticulos.CurrentRow.DataBoundItem;
+                    articulo.EliminarArticulo(seleccionado.Id);
+                    cargar();
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.ToString());
-                }
-
-
             }
-            else
+            catch (Exception ex)
             {
-
-                MessageBox.Show("seleccione un articulo", "ATENCION");
+                MessageBox.Show(ex.ToString());
             }
-
         }
+
+
+
+            
+
     }
-}
-        
-    
+    }
