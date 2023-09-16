@@ -112,5 +112,73 @@ namespace Negocio
             }
         }
 
+
+        public void ModificarArticulo(Articulo modificar)
+        {
+            AccesoDatos Datos = new AccesoDatos();
+            try
+            {
+               
+                Datos.setearConsulta("update ARTICULOS set Codigo = @codigo, Nombre = @nombre, Descripcion = @descripcion, IdMarca = @IdMarca, IdCategoria = @IdCategoria,  Precio = @precio  Where Id = @id");
+                Datos.setParameters("@codigo", modificar.CodigoArticulo);
+                Datos.setParameters("@nombre", modificar.Nombre);
+                Datos.setParameters("@descripcion", modificar.Descripcion);
+                Datos.setParameters("@IdMarca", modificar.Marca.idMarca);
+                Datos.setParameters("@IdCategoria", modificar.Categoria.idCategoria);
+                Datos.setParameters("@precio", modificar.Precio);
+                Datos.setParameters("@id", modificar.Id);
+                Datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                Datos.cerrarConexion();
+            }
+        }
+
+
+
+        public int TraerUltimoId()
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+
+                int cont = 0;
+                datos.setearConsulta("select id from ARTICULOS");
+                datos.ejecutarLectura();
+
+                while (datos.Lector.Read())
+                {
+                    cont++;
+                }
+
+                return cont + 1;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }

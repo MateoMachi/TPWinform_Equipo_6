@@ -1,4 +1,6 @@
-﻿namespace TPWinform_Catalogo
+﻿using System;
+
+namespace TPWinform_Catalogo
 {
     partial class FormAgregar
     {
@@ -103,7 +105,7 @@
             // 
             resources.ApplyResources(this.textBoxUrlImagen, "textBoxUrlImagen");
             this.textBoxUrlImagen.Name = "textBoxUrlImagen";
-            this.textBoxUrlImagen.Leave += new System.EventHandler(this.textBoxUrlImagen_Leave);
+          
             // 
             // buttonConfirmar
             // 
@@ -194,5 +196,6 @@
         private System.Windows.Forms.TextBox textBoxDescripcion;
         private System.Windows.Forms.ComboBox comboBoxMarca;
         private System.Windows.Forms.ComboBox comboBoxCategoria;
+        private EventHandler textBoxUrlImagen_Leave;
     }
 }

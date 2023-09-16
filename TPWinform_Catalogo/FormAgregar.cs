@@ -19,7 +19,7 @@ namespace TPWinform_Catalogo
         public FormAgregar(Articulo Seleccionado)
         {
           
-            articuloSelec = Seleccionado;
+            this.articuloSelec = Seleccionado;
             InitializeComponent();
         
         }
@@ -31,44 +31,117 @@ namespace TPWinform_Catalogo
 
         private void buttonConfirmar_Click(object sender, EventArgs e)
         {
-
-
-            Articulo artic = new Articulo();
-            ArticuloNegocio articNegocio = new ArticuloNegocio();
-
+            //Articulo articulo = new Articulo();
+            ArticuloNegocio negocio = new ArticuloNegocio();
             try
             {
-                /*
-                                artic.Id = int.Parse( textBoxId.Text);
-                                artic.nombre = textBoxNombre.Text;
-                                artic.descripcion = textBoxDescripcion.Text;
-                                artic.Categoria.nomCategoria = textBoxCategoria.Text;
-                                artic.codigoArticulo = textBoxCodArticulo.Text;
-                                artic.imagen.url = textBoxUrlImagen.Text;
-                                artic.Marca.nomMarca = textBoxMarca.Text;
-                                artic.precio = decimal.Parse(textBoxPrecio.Text );
 
-                                articNegocio.agregarArticulo(artic);
-                                */
+
+                string marca;
+                string categoria;
+                if (buttonConfirmar.Text != "" && textBoxDescripcion.Text != "" && textBoxPrecio.Text != "")
+                {
+                    if (articuloSelec == null)
+                    {
+                        articuloSelec = new Articulo();
+                    }
+
+                    articuloSelec.CodigoArticulo = textBoxCodArticulo.Text;
+                    articuloSelec.Nombre = textBoxNombre.Text;
+                    articuloSelec.Descripcion = textBoxDescripcion.Text;
+
+
+                    articuloSelec.Categoria = new Categoria();
+                    if (comboBoxCategoria.Text == "Celulares")
+                    {
+                        articuloSelec.Categoria.idCategoria = 1;
+                    }
+                    if (comboBoxCategoria.Text == "Televisores")
+                    {
+                        articuloSelec.Categoria.idCategoria = 2;
+                    }
+                    if (comboBoxCategoria.Text == "Media")
+                    {
+                        articuloSelec.Categoria.idCategoria = 3;
+                    }
+                    if (comboBoxCategoria.Text == "Audio")
+                    {
+                        articuloSelec.Categoria.idCategoria = 4;
+                    }
+
+                    articuloSelec.Marca = new Marca();
+                    if (comboBoxMarca.Text == "Samsung")
+                    {
+                        articuloSelec.Marca.idMarca = 1;
+                    }
+                    if (comboBoxMarca.Text == "Apple")
+                    {
+                        articuloSelec.Marca.idMarca = 2;
+                    }
+                    if (comboBoxMarca.Text == "Sony")
+                    {
+                        articuloSelec.Marca.idMarca = 3;
+                    }
+                    if (comboBoxMarca.Text == "Huawei")
+                    {
+                        articuloSelec.Marca.idMarca = 4;
+                    }
+                    if (comboBoxMarca.Text == "Motorola")
+                    {
+                        articuloSelec.Marca.idMarca = 5;
+                    }
+                    
+
+
+                    articuloSelec.imagen = new Imagen();
+
+
+
+                    articuloSelec.imagen.idArticulo = negocio.TraerUltimoId();
+                    articuloSelec.imagen.url = textBoxDescripcion.Text;
+                    articuloSelec.Precio = decimal.Parse(textBoxPrecio.Text);
+
+                    if (articuloSelec.Id != 0)
+                    {
+                        negocio.ModificarArticulo(articuloSelec);
+                        MessageBox.Show("Modificado!");
+                    }
+                    else
+                    {
+                        articuloSelec.Id = negocio.TraerUltimoId();
+                        negocio.agregarArticulo(articuloSelec);
+                        MessageBox.Show("Agregado!");
+                    }
+
+                    Close();
+                }
+                else
+                {
+                    textBoxPrecio.BackColor = Color.Red;
+                    textBoxNombre.BackColor = Color.Red;
+                    textBoxCodArticulo.BackColor = Color.Red;
+                    MessageBox.Show("Por favor cargue Nombre, Codigo y Precio", "ATENCION ");
+                }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                MessageBox.Show(ex.ToString());
             }
 
+             }
 
 
 
+        
 
-
-
-        }
-
-        private void textBoxUrlImagen_Leave(object sender, EventArgs e)
+        private void textBoxUrlImagen_leave(object sender, EventArgs e)
         {
             cargarImagen(textBoxUrlImagen.Text);
+
         }
+        
+         
+    
 
 
 
