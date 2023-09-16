@@ -37,8 +37,8 @@ namespace TPWinform_Catalogo
             {
 
 
-           
-                if (buttonConfirmar.Text != "" && textBoxDescripcion.Text != "" && textBoxPrecio.Text != "")
+
+                if (textBoxNombre.Text != ""  && textBoxCodArticulo.Text != "" && textBoxPrecio.Text != "")
                 {
                     if (articuloSelec == null)
                     {
@@ -156,7 +156,7 @@ namespace TPWinform_Catalogo
 
 
             }
-            catch (Exception ex)
+            catch (Exception )
             {
 
                 pictureBoxAlta.Load("https://uning.es/wp-content/uploads/2016/08/ef3-placeholder-image.jpg");

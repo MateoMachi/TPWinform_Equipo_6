@@ -74,7 +74,7 @@ namespace TPWinform_Catalogo
             {
                 pictureBoxFoto.Load(imagen);
             }
-            catch (Exception ex)
+            catch (Exception )
             {
 
                 pictureBoxFoto.Load("https://www.webempresa.com/foro/wp-content/uploads/wpforo/attachments/3200/318277=80538-Sin_imagen_disponible.jpg");
