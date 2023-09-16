@@ -113,7 +113,6 @@
             this.btnRecargar.TabIndex = 2;
             this.btnRecargar.Text = "Recargar";
             this.btnRecargar.UseVisualStyleBackColor = true;
-            this.btnRecargar.Click += new System.EventHandler(this.btnRecargar_Click);
             // 
             // lblTitulo
             // 

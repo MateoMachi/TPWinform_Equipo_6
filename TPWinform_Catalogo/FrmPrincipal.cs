@@ -75,7 +75,7 @@ namespace TPWinform_Catalogo
             {
                 pictureBoxFoto.Load(imagen);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
                 pictureBoxFoto.Load("https://www.webempresa.com/foro/wp-content/uploads/wpforo/attachments/3200/318277=80538-Sin_imagen_disponible.jpg");
@@ -220,11 +220,6 @@ namespace TPWinform_Catalogo
                 MessageBox.Show("seleccione un articulo", "ATENCION");
             }
 
-        }
-
-        private void btnRecargar_Click(object sender, EventArgs e)
-        {
-            cargar();
         }
     }
 }
