@@ -31,14 +31,12 @@ namespace TPWinform_Catalogo
 
         private void buttonConfirmar_Click(object sender, EventArgs e)
         {
-            //Articulo articulo = new Articulo();
+ 
             ArticuloNegocio negocio = new ArticuloNegocio();
             try
             {
 
 
-                string marca;
-                string categoria;
                 if (buttonConfirmar.Text != "" && textBoxDescripcion.Text != "" && textBoxPrecio.Text != "")
                 {
                     if (articuloSelec == null)
@@ -131,17 +129,8 @@ namespace TPWinform_Catalogo
              }
 
 
+       
 
-        
-
-        private void textBoxUrlImagen_leave(object sender, EventArgs e)
-        {
-            cargarImagen(textBoxUrlImagen.Text);
-
-        }
-        
-         
-    
 
 
 
@@ -157,7 +146,7 @@ namespace TPWinform_Catalogo
 
 
             }
-            catch (Exception ex)
+            catch (Exception )
             {
 
                 pictureBoxAlta.Load("https://uning.es/wp-content/uploads/2016/08/ef3-placeholder-image.jpg");
@@ -247,7 +236,14 @@ namespace TPWinform_Catalogo
         {
             Close();
         }
+
+        private void textBoxUrlImagen_Leave_1(object sender, EventArgs e)
+        {
+            cargarImagen(textBoxUrlImagen.Text);
+        }
+    
     }
-   }
+   
+}
 
 

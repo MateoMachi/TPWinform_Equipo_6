@@ -105,7 +105,7 @@ namespace TPWinform_Catalogo
             // 
             resources.ApplyResources(this.textBoxUrlImagen, "textBoxUrlImagen");
             this.textBoxUrlImagen.Name = "textBoxUrlImagen";
-          
+            this.textBoxUrlImagen.Leave += new System.EventHandler(this.textBoxUrlImagen_Leave_1);
             // 
             // buttonConfirmar
             // 
@@ -169,6 +169,8 @@ namespace TPWinform_Catalogo
             this.Controls.Add(this.labelCodArticulo);
             this.Controls.Add(this.labelPrecio);
             this.Controls.Add(this.labelNombre);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "FormAgregar";
             this.Load += new System.EventHandler(this.FormAgregar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAlta)).EndInit();
@@ -196,6 +198,6 @@ namespace TPWinform_Catalogo
         private System.Windows.Forms.TextBox textBoxDescripcion;
         private System.Windows.Forms.ComboBox comboBoxMarca;
         private System.Windows.Forms.ComboBox comboBoxCategoria;
-        private EventHandler textBoxUrlImagen_Leave;
+      
     }
 }
