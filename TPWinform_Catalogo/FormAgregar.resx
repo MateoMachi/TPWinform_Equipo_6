@@ -514,7 +514,7 @@
     <value>100, 20</value>
   </data>
   <data name="cajaNumerica.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+    <value>1</value>
   </data>
   <data name="&gt;&gt;cajaNumerica.Name" xml:space="preserve">
     <value>cajaNumerica</value>
@@ -536,6 +536,75 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>552, 450</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAAAAAAAEAIAALDwAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAEAAAABAAgAAAAAeRn3ugAAAAFv
+        ck5UAc+id5oAAA7FSURBVHja7Z1/jFTFHcDf3h163CF77wBtjEn9QRNqq41NpcEqZ/QMTQ9po6Zp0yaC
+        2mIhEe4Ae/y2chzy4w4OsKltk6amtU3bVBFCrfaXrdEYFUQpBwjYhsODg933c97P3Z0u92Nv593+eDM7
+        78e87vwFL/fdt/PZ975vZj4z8ziYK2YyV8zcwbSYO6iO/6maOyim2Y5PclUAVQBVAFUAVQBVAFUAUQWQ
+        wQGQGDuYyPsAIXcw/wNyfypkwhcvytn/yMmhoaRkwLQslopPcmau6Gqu6ONHxw9q4we18aPhi9dTH+9/
+        tv2h1tmzWx9cvmff6ZReKp5Luidc8BITwhY/+IvFd07hcqXhju/9fKB4PBwHEI0k9/Gzn2vkHKVhVl//
+        /wmAxK9ncwXLzK0XoRVxANlb4P22Jq5IqZ33L0OMNgBF3v8lrkSZvueSGmUAkrrnGq5kiXcKWnQBgOS2
+        OFemXNmR0KIKQFS7GrmypX69IkYTAFB7eM5Fif9YF4oCYLghJMo9cc5V+dQ/tYQDQBSawulXp3Muy4ND
+        tqMpHInO0OAjNS4B1O1xdoai0R0+/0jMJYGbz0VzPEBY4RJA7faIDogMddS6I3D7hYiOCCmL3N0F/O+j
+        OiQ2+Ji7TNhuRwmAMB6fHnB3Ddx+JioABKAbRt73lwdcPQ3r38QBMP4cLvILZAKLV6U3nt31mzN58fK5
+        x1xcAzV/QACkx0rGFMTRIpiZsYMpaeyooGZyf6rmDkqpTDDxApCfup7jGm97PvsJmZF4QTn3SF1ZALHu
+        dO78osjl/hWyCpaLh8Lq+uH6NG63hj8jG589qraXvwSWqEbuVOlyvcEAL/HS8XLn2NDvjf1qXvzQirJ3
+        wbflCHSH5cfrcxXaYObHJ8tmwvsl5gHYl5Y15F3SIx8yFn/+0VjUAQBh5aS8CnVYaPxgmUz4MOu3ABCW
+        XJFXn+aXNEc8WF7yGmhX2QagXVo6Jb8+31FFZ/zgwhIEYn060wA0cXF+v6/2nn59Qrxx9tHimbDmgMky
+        AO1ifv7jYg+cMgvEy+eKZ8LmN2TCQdEwDJkBYVV+/qtpOWkWjJfPLix2Dcw+jTwF2PL/urAkv/5c2ylY
+        JN44X6RfEFuhgbzzu+8MhWLYXFmN5L+2D+3i8ecXFgRw7V8ZHhSVVk/Oz3/3HrdLxQ+iV8touVtmd0RI
+        6kT8133Z/CeUitcfn3gX1O1gdlBUV1bn179mwTGzXHxyYs+odYBVAEBArn/ua6et8vFDzkzY8AKr8wQ1
+        YQma/46abuLPO9qEjyUZBaBdRJ7/tff2267i4TlkrPi2w4zOFAXSMiSjt461/8rGK+fyrNl1f2Z0qiyQ
+        Hfmv33Q7VVaQBxaNXQPX/NLGBhCKhpAj/9U8eNrCiJcHRjMhvztdYKosA01hW0bbfwtOQwsnPj246HL/
+        ke8xwMTzs9AZcrT/WvstC/P8Skcs+/sbcmLC+VnoDsto++/ebP7DPv+FhdN6TZnFiZJCtv/TgDz/L+c/
+        /POffdVkc6osEDqR/Pe1o7areAHomia7aCeEHICG5r9Yy0emq3gl+frevS+eNIRyT4mQA9CGViH574HR
+        8Z9y8ebhr8fr66fcut+QmL4CgLR8kjP/uYo/PHckYNZrOssANOlxpP/Xdtx0F3+kZSzkGxdghQAClKPa
+        0HIk/7V9aLuLf3/e+NzYv5UFEFY9LgAZ6f/FWk7ZolA+PgNP3JcX9jtY8vzpdGgnSEDH+EfbSegiXhC0
+        D1ryoq44oJU8vyiGdoqM0ok8/+Z/aLqJF4xDX83HNucjmdGVozL6+88/Y7mKV99tQeZD/TTD5tJZW+ps
+        QPOf5SZe1N+5ExkAW26XuwLDCcA5/jHS/isfryL5j+PaAZuLp53jv20j7d+y8eoR5PqPdQA2V48D2em/
+        TFfx8DCS/+I/1CGTAICIjn/cc9x2F38UqX9slQ6ZBADEThf+v0D88bnI/f+EBbEBhML/O/NfEf8/If74
+        fDT/ae7OH7b9A3Rn/ivq/9F4eBT9/ZfJtsvzh2zZHI7/z4tX0fzHLRVll+cPWXcYz//n4pUjjvynym7P
+        Hy4AuP5/NF451uLIfyDBIgAC/z8cb707of3n/vwhAkDk/2FaUND2f2wFgEwCmND+c+f/M9ohtP27VIdM
+        AnC2/1z7/w+Q/Ne4UodMAsi2/xqJ/P8J9PfvMiCTALLXfwOR/38fyX8NT6mQHACL/v/IPOT3H7n+sc4f
+        iv0DbJXI/wPrMPr8X6oC/POHoTMkbZ1C4P8T5jtz0fEPsYD/L98ZCr47rHcR+X+l/27k9+/QZYLzBw5A
+        gMraOIn/B4dakfqvMO0kiwAI/X9COYTkv/gqi80dJQGp/+9Hfv+6y+N/LAJwPP/c+/+3kft/0jYdMgkA
+        SIj/wvf/4/0/JgEAyTH/Cd//D983ywD0DoCHcjSb/xoq9f+j+Y/8+we3f4AwIf8R+X+OWze6Fp7o+we4
+        fwAd/89xyyRFIP/+Ae4fQMf/c+2yXNH3D6w7rK8l8f8iQP0/t1JXKvv+AQGwpa44gf9PGodQ/7/ShgKL
+        AIC6lcj/K8eQ/Dep3aj4MR0IgGz7bwoF/1+3DUAmAfjq/0MIgJL/b3hSh0wCoOT/Y5tsSBkAU/7/ipH+
+        T+VDdn7vH6CBjTT8f223YlMatPV52Zy6cZq//j9kg6Iy8vwn9f+NT7r3/+EaD6Dj/2NPp9z7/zAB0Oj4
+        /8Yuhc3X7ABH/iP0/9xKg833DAHZkf/I/H98tQaZBEDJ/zd02pBJAJT8f02XDpkEQMv/d2vQbwBh8v/x
+        Tr3ShliBhlB4/b9qOvx/pwHoz1/wozNE5P8Tgvq2w/8LMv35C350hwn9v3bybrT+RP4/8PEAAerrafj/
+        hk3ATrIIAAibp9Lw/2tS3jylvAbgGP8g9v/rU5BJAJT8f902AzIJAGibGyn4//haAJkEADRH/iPz/9wq
+        EwYHoCL/vzlOw/+vqcT/l5ejXulxYUL+I/P/devsjHfzFzzcP4CS/6/rrsj/u5gg4dUUGR3Jf6T+P75O
+        kr26Rb3tDuvrp1JY/z/5SUPxtqHmEQBC/+9c/x/bmsoILAIg9f+O9f+TOnQ2X75Oy//3WGy+fZ6W/19v
+        QCYB0PL/2f4fkwBo+f9nUtB3AFT8v7KVhv9v3qz7s2SH9v4BmrqxkYb/325ZPi3aorxsjo7/j3cKtPy/
+        zzNF6fj/hjUGNf/v73iATMf/b0mBJIsANEf7j9T/d2s+Lt2lCAA48h+h/596+fnPIgCgUPH/U3tsyCQA
+        IDryH+H6/zWU/b9fAGit/+9OQSYB0PL/W6j7f3/2D6Dl/0f6P9DP/Quo7B9Aaf1/rSf+34/9A+is/2/e
+        7oX/92OqLJ31/7HNlhf+3/PxAGr+/xndSrIIIOz+32sAEtr+D5//9xgASG6NU/D//E7P/L+3ACj5f743
+        BZkEQMn/T95pw/AC8MH/r7U99P/e7R8gAGf+C6P/93D/AAg2TAm///dw/wCtp5mC/+e99v+ejQqT+X/n
+        +n9+l+2x//doPIDS+n9+V9pr/+8NAErr//leO/AXOhIBkNQNjRT8P787BZkEABIbmyn4f354/JdBAACs
+        o+H/+T4bMgkAiJuaKPh/fqc//p/6/gGU/P/l/OfLkBft/QMo+X9+t2kF8v6CivcPoOP/+S26X/6f8qCo
+        toOG/+f7NN/8P93xAK2Hp+D/+Z1p//w/TQCauoOn4P/5nXaIXuqKAYCS/+f7UpBFAAmgUvH/vM/+nxoA
+        ZWgbDf8/2v5jDwAAm2j4/7H2H3MAgLS2iYL/50fHf1kCMOL/wVM0/D/fl/bd/1PZP8BWNzRTWP/Pb9FA
+        0K/yIts/QELnPxGu/+d36wH4fxr7B9BZ/8/3mkH4/8pXjkKjt4mC/8/mv0D8f8UAgNoTp+D/L7f/TAYB
+        JFS9t5mC/x9u/7EIQLmwjYr/321DJgFEwP9XBICS/+d3Bej/KwEgJan4f35XOkD/T75/AC3/39RjBej/
+        K9g/AKq9cQr+v2m7GqT/r2D/AIOO/+9Rg/X/xPsH6OjvT7j+n99lBez/CbvDltbTRGH9fwj8PxkARevl
+        Kaz/D4P/JwIgyLunRsX/EwEAr1wdGf9PAkBQlkfH/5MAED+5Kzr+n2D/gIT27+nR8f8k+wdYe+vG2z8f
+        se7/CfYPSD80/iKHHdDV/IHw+n+SmaLCF8er8pl9bsRJiP0/SXf4zU/nVeaG/Wz7fxIAzyFvQZz5MtP+
+        nwCA+C1kO0fu+n0s+38CACduRQFwNx1g2P8TAPjHJAcA7sZ97Pp/AgDPxZwARjMhk/4fH4C2gJtYhjMh
+        k/4ff6rsqesKABjOhEz6f+z9A6wXrioEgJv5Ytoos/4/nP4fd/8A81GucLnhxTRK2Ln+P5z+H3eqrCS0
+        cUUJoPeYY/1/SP0/7ngA+Pu1xQBwMw8y6P9xAWh9XPFyy0H2/D8mAEFeXAIAN3M/c/4fE4A8cEspANwN
+        +1jz/5gAjP6rSgLgbjzAmP/HA5DQuutKA+Bu2seW/8cDIIK5XLly/ctM+X+8/QPAf75QFgD3+V+h9Q+1
+        /8fcPwC+PKM8AK6hBsl/hhxi/4+7f0BvjMMrfI8Rbv+PNyp8cQFu/Xfl7X8VyiSHNx5waAZu/UPv//EA
+        vFKDV38G/D8WgNRGrBTAhP/HAgBa8PIfC/4fBwB4+2qc+rPh/3EA6Hvr3df/ur1s+H8MAELqBy4rP3nG
+        nO73GPH/GPsH6IOtbmo/446lPzl8UU+z4v8x9g/4y/Qyda+98rNP7P3TfwlbasEMe+MMivaVrP30WfO6
+        Dp41WLvHMbrD6neL1755/uqXTlgZBpMcBoBLXylY9yun3bTkj2+dtzVVhxEHUGAwpGbOw72vD6iWKgno
+        PRRFAKmnHQ+7Wd/s/e0ZaGgqy895nCGxY1/OVf6qWXd9/+Ankov+dpQAwNduHp4bOG3O4uePmhkYiZYe
+        DgDLeO9H99++6GdvnQGQmQrQHRVWNDEpm7okWMw0ZHzZPyDUTVk/9g8Ic2fGj/0DmL7Hg377fBVAFUAV
+        QBVAFUAVQBVAiAH8DxK7hDSa/DMbAAAAAElFTkSuQmCC
+</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
